@@ -4,21 +4,14 @@ android {
     namespace 'com.project.sonic'
     compileSdk 36
 
-    // These are broken JADX-decompiled artifacts; the real classes come from
-    // the Android SDK and the declared AndroidX/ICU dependencies.
+    // The thousands of JADX-decompiled .java files in this tree are not valid
+    // Java (broken enums, interface initializers, unknown types). Only the
+    // hand-written Kotlin runtime is compiled; the decompiled sources are
+    // kept in the repo for reference.
     sourceSets {
         main {
             java {
-                exclude 'com/ibm/**'
-                exclude 'android/accessibilityservice/AccessibilityService$TakeScreenshotCallback.java'
-                exclude 'android/view/ScrollCaptureCallback.java'
-                exclude 'android/view/translation/ViewTranslationCallback.java'
-                exclude 'android/window/OnBackAnimationCallback.java'
-                exclude 'android/window/OnBackInvokedCallback.java'
-                exclude 'defpackage/b60.java'
-                exclude 'defpackage/hc3.java'
-                exclude 'defpackage/q72.java'
-                exclude 'defpackage/xy0.java'
+                exclude '**/*.java'
             }
         }
     }
