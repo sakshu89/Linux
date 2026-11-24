@@ -3,7 +3,7 @@ name: Build Linux Android
 on:
   workflow_dispatch:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
 
 jobs:
   build:
@@ -26,29 +26,50 @@ jobs:
         uses: android-actions/setup-android@v3
 
       - name: Install Android packages
-        run: sdkmanager "platforms;android-36" "build-tools;35.0.0" "ndk;28.0.13004108" "cmake;3.31.6"
+        run: |
+          sdkmanager --install             "platforms;android-36"             "build-tools;35.0.0"             "ndk;28.0.13004108"             "cmake;3.31.6"
 
       - name: Fetch llama.cpp
         run: |
-          git clone --depth 1 https://github.com/ggml-org/llama.cpp.git third_party/llama.cpp
+          mkdir -p third_party
+          git clone --depth 1             https://github.com/ggml-org/llama.cpp.git             third_party/llama.cpp
 
       - name: Fetch Cactus
         run: |
-          git clone --depth 1 https://github.com/cactus-compute/cactus.git third_party/cactus
+          mkdir -p third_party
+          git clone --depth 1             https://github.com/cactus-compute/cactus.git             third_party/cactus
+
           python3 -m pip install --upgrade pip
           python3 -m pip install -U cactus-compute
-          cd third_party/cactus
+
+      - name: Build Cactus Android
+        working-directory: third_party/cactus
+        run: |
           source ./setup
           cactus build --android
-          mkdir -p lib/arm64-v8a
-          if [ -f android/libcactus.so ]; then cp android/libcactus.so lib/arm64-v8a/libcactus.so; fi
-          if [ -f android/libcactus_engine.so ]; then cp android/libcactus_engine.so lib/arm64-v8a/libcactus.so; fi
 
-      - name: Copy Cactus headers
+      - name: Prepare Cactus native library
         run: |
+          set -eux
+
+          test -f third_party/cactus/cactus_engine.h
+
           mkdir -p third_party/cactus/include
-          if [ -f third_party/cactus/cactus_engine.h ]; then cp third_party/cactus/cactus_engine.h third_party/cactus/include/; fi
-          find third_party/cactus -name 'cactus_engine.h' -o -name 'cactus.h' | head -20
+          mkdir -p third_party/cactus/lib/arm64-v8a
+
+          cp third_party/cactus/cactus_engine.h              third_party/cactus/include/cactus_engine.h
+
+          test -f third_party/cactus/android/libcactus.so
+
+          cp third_party/cactus/android/libcactus.so              third_party/cactus/lib/arm64-v8a/libcactus.so
+
+      - name: Verify native dependencies
+        run: |
+          set -eux
+          test -f third_party/llama.cpp/CMakeLists.txt
+          test -f third_party/cactus/include/cactus_engine.h
+          test -f third_party/cactus/lib/arm64-v8a/libcactus.so
+          file third_party/cactus/lib/arm64-v8a/libcactus.so || true
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -56,10 +77,13 @@ jobs:
           gradle-version: '8.10.2'
 
       - name: Assemble debug APK
-        run: gradle :app:assembleDebug --stacktrace
+        run: gradle :app:assembleDebug --stacktrace --info
+
+      - name: Verify APK
+        run: test -f app/build/outputs/apk/debug/app-debug.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: Linux-debug-apk
-          path: app/build/outputs/apk/debug/*.apk
+          path: app/build/outputs/apk/debug/app-debug.apk
