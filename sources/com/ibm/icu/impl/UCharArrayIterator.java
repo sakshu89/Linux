@@ -1,0 +1,102 @@
+package com.ibm.icu.impl;
+
+import com.ibm.icu.text.UCharacterIterator;
+import defpackage.cq;
+import defpackage.og;
+
+/* JADX INFO: compiled from: r8-map-id-052cfdc27f13693602f29a54f0f26da42a69e49534e5b71cf81005ba2b6d6d3d */
+/* JADX INFO: loaded from: classes.dex */
+public final class UCharArrayIterator extends UCharacterIterator implements Cloneable {
+    private final int limit;
+    private int pos;
+    private final int start;
+    private final char[] text;
+
+    public UCharArrayIterator(char[] cArr, int i, int i2) {
+        if (i < 0 || i2 > cArr.length || i > i2) {
+            int length = cArr.length;
+            StringBuilder sbP = cq.p("start: ", i, " or limit: ", i2, " out of range [0, ");
+            sbP.append(length);
+            sbP.append(")");
+            throw new IllegalArgumentException(sbP.toString());
+        }
+        this.text = cArr;
+        this.start = i;
+        this.limit = i2;
+        this.pos = i;
+    }
+
+    @Override // com.ibm.icu.text.UCharacterIterator
+    /* JADX INFO: renamed from: clone */
+    public UCharArrayIterator mo2clone() {
+        try {
+            return (UCharArrayIterator) super.mo2clone();
+        } catch (CloneNotSupportedException unused) {
+            return null;
+        }
+    }
+
+    @Override // com.ibm.icu.text.UCharacterIterator
+    public int current() {
+        int i = this.pos;
+        if (i < this.limit) {
+            return this.text[i];
+        }
+        return -1;
+    }
+
+    @Override // com.ibm.icu.text.UCharacterIterator
+    public int getIndex() {
+        return this.pos - this.start;
+    }
+
+    @Override // com.ibm.icu.text.UCharacterIterator
+    public int getLength() {
+        return this.limit - this.start;
+    }
+
+    @Override // com.ibm.icu.text.UCharacterIterator
+    public int getText(char[] cArr, int i) {
+        int i2 = this.limit;
+        int i3 = this.start;
+        int i4 = i2 - i3;
+        System.arraycopy(this.text, i3, cArr, i, i4);
+        return i4;
+    }
+
+    @Override // com.ibm.icu.text.UCharacterIterator, com.ibm.icu.text.UForwardCharacterIterator
+    public int next() {
+        int i = this.pos;
+        if (i >= this.limit) {
+            return -1;
+        }
+        char[] cArr = this.text;
+        this.pos = i + 1;
+        return cArr[i];
+    }
+
+    @Override // com.ibm.icu.text.UCharacterIterator
+    public int previous() {
+        int i = this.pos;
+        if (i <= this.start) {
+            return -1;
+        }
+        char[] cArr = this.text;
+        int i2 = i - 1;
+        this.pos = i2;
+        return cArr[i2];
+    }
+
+    @Override // com.ibm.icu.text.UCharacterIterator
+    public void setIndex(int i) {
+        if (i >= 0) {
+            int i2 = this.limit;
+            int i3 = this.start;
+            if (i <= i2 - i3) {
+                this.pos = i3 + i;
+                return;
+            }
+        }
+        og.o(cq.i("index: ", i, " out of range [0, ", this.limit - this.start, ")"));
+    }
+}

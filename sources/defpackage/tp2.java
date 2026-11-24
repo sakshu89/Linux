@@ -1,0 +1,29 @@
+package defpackage;
+
+import android.graphics.Bitmap;
+import android.graphics.Rect;
+
+/* JADX INFO: compiled from: r8-map-id-052cfdc27f13693602f29a54f0f26da42a69e49534e5b71cf81005ba2b6d6d3d */
+/* JADX INFO: loaded from: classes.dex */
+public final class tp2 extends y50 {
+    public Bitmap e;
+    public Rect f;
+    public jb i;
+    public long j;
+    public /* synthetic */ Object k;
+    public final /* synthetic */ up2 n;
+    public int s;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public tp2(up2 up2Var, y50 y50Var) {
+        super(y50Var);
+        this.n = up2Var;
+    }
+
+    @Override // defpackage.pk
+    public final Object s(Object obj) {
+        this.k = obj;
+        this.s |= Integer.MIN_VALUE;
+        return this.n.b(null, null, 0L, this);
+    }
+}

@@ -1,0 +1,21 @@
+package defpackage;
+
+import java.util.Collection;
+import java.util.Iterator;
+
+/* JADX INFO: compiled from: r8-map-id-052cfdc27f13693602f29a54f0f26da42a69e49534e5b71cf81005ba2b6d6d3d */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class rz extends qz {
+    public static void q(Iterable iterable, Collection collection) {
+        collection.getClass();
+        iterable.getClass();
+        if (iterable instanceof Collection) {
+            collection.addAll((Collection) iterable);
+            return;
+        }
+        Iterator it = iterable.iterator();
+        while (it.hasNext()) {
+            collection.add(it.next());
+        }
+    }
+}
