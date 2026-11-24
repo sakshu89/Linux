@@ -26,6 +26,26 @@ android {
         externalNativeBuild { cmake { cppFlags '-std=c++17 -O2' } }
     }
     buildFeatures { buildConfig true }
+
+    // A repo-local debug keystore with v1 (JAR) signing enabled: v2-only APKs
+    // are rejected as "unable to parse" by some installers.
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            v1SigningEnabled true
+            v2SigningEnabled true
+            v3SigningEnabled true
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
