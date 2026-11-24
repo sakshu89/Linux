@@ -36,42 +36,27 @@ jobs:
           mkdir -p third_party
           git clone --depth 1             https://github.com/ggml-org/llama.cpp.git             third_party/llama.cpp
 
-      - name: Fetch Cactus
+      - name: Fetch Cactus Android engine
         run: |
-          mkdir -p third_party
-          git clone --depth 1             https://github.com/cactus-compute/cactus.git             third_party/cactus
-
+          set -eux
           python3 -m pip install --upgrade pip
           python3 -m pip install -U cactus-compute
 
-      - name: Build Cactus Android
-        working-directory: third_party/cactus
-        run: |
-          source ./setup
-          cactus build --android
-
-      - name: Prepare Cactus native library
-        run: |
-          set -eux
-
-          test -f third_party/cactus/cactus_engine.h
+          mkdir -p third_party/cactus
+          cactus download android-arm64 --out third_party/cactus
+          ls -la third_party/cactus/android-arm64
 
           mkdir -p third_party/cactus/include
           mkdir -p third_party/cactus/lib/arm64-v8a
-
-          cp third_party/cactus/cactus_engine.h              third_party/cactus/include/cactus_engine.h
-
-          test -f third_party/cactus/android/libcactus.so
-
-          cp third_party/cactus/android/libcactus.so              third_party/cactus/lib/arm64-v8a/libcactus.so
+          cp third_party/cactus/android-arm64/cactus.h third_party/cactus/include/cactus.h
+          cp third_party/cactus/android-arm64/libcactus.a third_party/cactus/lib/arm64-v8a/libcactus.a
 
       - name: Verify native dependencies
         run: |
           set -eux
           test -f third_party/llama.cpp/CMakeLists.txt
-          test -f third_party/cactus/include/cactus_engine.h
-          test -f third_party/cactus/lib/arm64-v8a/libcactus.so
-          file third_party/cactus/lib/arm64-v8a/libcactus.so || true
+          test -f third_party/cactus/include/cactus.h
+          test -f third_party/cactus/lib/arm64-v8a/libcactus.a
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4

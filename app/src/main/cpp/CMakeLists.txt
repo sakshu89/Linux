@@ -27,21 +27,21 @@ target_link_libraries(linux_llama PRIVATE
 )
 
 # Cactus Needle is required for the real tool/action runtime.
-if(NOT EXISTS "${CACTUS_DIR}/include/cactus_engine.h")
+if(NOT EXISTS "${CACTUS_DIR}/include/cactus.h")
     message(FATAL_ERROR
-        "Cactus header missing: ${CACTUS_DIR}/include/cactus_engine.h")
+        "Cactus header missing: ${CACTUS_DIR}/include/cactus.h")
 endif()
 
-if(NOT EXISTS "${CACTUS_DIR}/lib/arm64-v8a/libcactus.so")
+if(NOT EXISTS "${CACTUS_DIR}/lib/arm64-v8a/libcactus.a")
     message(FATAL_ERROR
-        "Cactus Android library missing: ${CACTUS_DIR}/lib/arm64-v8a/libcactus.so")
+        "Cactus Android library missing: ${CACTUS_DIR}/lib/arm64-v8a/libcactus.a")
 endif()
 
-add_library(cactus_engine SHARED IMPORTED)
+add_library(cactus_engine STATIC IMPORTED)
 
 set_target_properties(cactus_engine PROPERTIES
     IMPORTED_LOCATION
-    "${CACTUS_DIR}/lib/arm64-v8a/libcactus.so"
+    "${CACTUS_DIR}/lib/arm64-v8a/libcactus.a"
 )
 
 add_library(linux_cactus SHARED linux_cactus_jni.cpp)
@@ -54,4 +54,6 @@ target_link_libraries(linux_cactus PRIVATE
     cactus_engine
     log
     android
+    dl
+    m
 )
