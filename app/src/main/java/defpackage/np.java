@@ -37,7 +37,7 @@ public final class np implements bl2 {
     /* JADX WARN: Type inference failed for: r2v3, types: [boolean, int] */
     /* JADX WARN: Type inference failed for: r2v4 */
     public static void n(Intent intent, String str) {
-        ?? r2;
+        Object r2;
         if (g31.a(str, "front")) {
             r2 = 1;
         } else if (!g31.a(str, "rear")) {

@@ -48,7 +48,7 @@ public final class v93 {
     /* JADX WARN: Type inference failed for: r3v8 */
     public final int hashCode() {
         boolean z = this.a;
-        ?? r1 = z;
+        var r1 = z;
         if (z) {
             r1 = 1;
         }
@@ -56,7 +56,7 @@ public final class v93 {
         Integer num = this.b;
         int iHashCode = (i + (num == null ? 0 : num.hashCode())) * 31;
         boolean z2 = this.c;
-        ?? r3 = z2;
+        var r3 = z2;
         if (z2) {
             r3 = 1;
         }
@@ -64,7 +64,7 @@ public final class v93 {
         Integer num2 = this.d;
         int iHashCode2 = (i2 + (num2 != null ? num2.hashCode() : 0)) * 31;
         boolean z3 = this.e;
-        ?? r2 = z3;
+        var r2 = z3;
         if (z3) {
             r2 = 1;
         }

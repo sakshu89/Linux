@@ -41,9 +41,9 @@ public class PluralRulesLoader extends PluralRules.Factory {
     /* JADX WARN: Type inference failed for: r3v1, types: [java.util.Map<java.lang.String, com.ibm.icu.util.ULocale>] */
     /* JADX WARN: Type inference failed for: r3v2, types: [java.util.HashMap] */
     private void checkBuildRulesIdMaps() {
-        ?? treeMap;
-        ?? treeMap2;
-        ?? map;
+        Object treeMap;
+        Object treeMap2;
+        Object map;
         if (this.localeIdToCardinalRulesId != null) {
             return;
         }

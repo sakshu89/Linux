@@ -86,13 +86,13 @@ public class AffixMatcher implements NumberParseMatcher {
     public static void createMatchers(AffixPatternProvider affixPatternProvider, NumberParserImpl numberParserImpl, AffixTokenMatcherFactory affixTokenMatcherFactory, IgnorablesMatcher ignorablesMatcher, int i) {
         int i2;
         boolean z;
-        ?? r11;
-        ?? r10;
+        Object r11;
+        Object r10;
         AffixPatternMatcher affixPatternMatcher;
-        ?? r12;
-        ?? r13;
-        ?? r14;
-        ?? r15;
+        Object r12;
+        Object r13;
+        Object r14;
+        Object r15;
         AffixPatternProvider affixPatternProvider2 = affixPatternProvider;
         if (isInteresting(affixPatternProvider2, ignorablesMatcher, i)) {
             StringBuilder sb = new StringBuilder();
@@ -101,22 +101,22 @@ public class AffixMatcher implements NumberParseMatcher {
             PatternStringUtils.PatternSignType[] patternSignTypeArr = PatternStringUtils.PatternSignType.VALUES;
             int length = patternSignTypeArr.length;
             int i3 = 0;
-            ?? r3 = 0;
-            ?? r4 = 0;
+            var r3 = 0;
+            var r4 = 0;
             while (i3 < length) {
-                ?? r5 = r3;
+                var r5 = r3;
                 PatternStringUtils.PatternSignType patternSignType = patternSignTypeArr[i3];
                 PatternStringUtils.PatternSignType patternSignType2 = PatternStringUtils.PatternSignType.POS;
                 if ((patternSignType != patternSignType2 || (i & 1024) == 0) && !(patternSignType == PatternStringUtils.PatternSignType.POS_SIGN && (i & 1024) == 0)) {
-                    ?? r16 = r5;
+                    var r16 = r5;
                     StandardPlural standardPlural = StandardPlural.OTHER;
                     i2 = i3;
-                    ?? r17 = r4;
+                    var r17 = r4;
                     PatternStringUtils.patternInfoToStringBuilder(affixPatternProvider2, true, patternSignType, false, standardPlural, false, sb);
-                    ?? FromAffixPattern = AffixPatternMatcher.fromAffixPattern(sb.toString(), affixTokenMatcherFactory, i);
+                    var FromAffixPattern = AffixPatternMatcher.fromAffixPattern(sb.toString(), affixTokenMatcherFactory, i);
                     z = z2;
                     PatternStringUtils.patternInfoToStringBuilder(affixPatternProvider, false, patternSignType, false, standardPlural, false, sb);
-                    ?? FromAffixPattern2 = AffixPatternMatcher.fromAffixPattern(sb.toString(), affixTokenMatcherFactory, i);
+                    var FromAffixPattern2 = AffixPatternMatcher.fromAffixPattern(sb.toString(), affixTokenMatcherFactory, i);
                     if (patternSignType == patternSignType2) {
                         r11 = FromAffixPattern2;
                         r10 = FromAffixPattern;

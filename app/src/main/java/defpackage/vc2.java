@@ -153,10 +153,10 @@ public final class vc2 implements bl2 {
         int i2;
         ec2 ec2Var2;
         f5 f5Var2;
-        ?? r1;
+        Object r1;
         vc2 vc2Var2;
         int i3;
-        ?? r2;
+        Object r2;
         int i4 = i;
         if (y50Var instanceof jc2) {
             jc2Var = (jc2) y50Var;
@@ -177,8 +177,8 @@ public final class vc2 implements bl2 {
             fc2 fc2VarP = vc2Var.p();
             String strG = uz3.g(wc2Var);
             String strG2 = uz3.g(wc2Var2);
-            ?? r6 = (g31.a(fc2VarP != null ? fc2VarP.a : null, fc2Var.a) && fc2VarP.b == fc2Var.b) ? 1 : 0;
-            ?? r8 = (strG == null || strG2 == null || !wz3.a(strG, strG2)) ? 0 : 1;
+            var r6 = (g31.a(fc2VarP != null ? fc2VarP.a : null, fc2Var.a) && fc2VarP.b == fc2Var.b) ? 1 : 0;
+            var r8 = (strG == null || strG2 == null || !wz3.a(strG, strG2)) ? 0 : 1;
             if (str == null || !yc3.m(str)) {
                 i2 = 0;
             } else {
@@ -1336,15 +1336,15 @@ public final class vc2 implements bl2 {
     public final Object q(f5 f5Var, boolean z, fc2 fc2Var, y50 y50Var) {
         hc2 hc2Var;
         xc2 xc2Var;
-        ?? r2;
-        ?? r1;
+        Object r2;
+        Object r1;
         Iterator it;
         String strC;
         String str;
         fc2 fc2Var2;
         f5 f5Var2;
         Object obj;
-        ?? r3;
+        Object r3;
         xb2 xb2Var;
         wc2 wc2Var;
         fc2 fc2VarP;
@@ -1403,7 +1403,7 @@ public final class vc2 implements bl2 {
         Object obj4;
         ob2 ob2Var;
         String str15;
-        ?? r8;
+        Object r8;
         Object objG;
         v3 v3Var;
         List list5;
@@ -1417,8 +1417,8 @@ public final class vc2 implements bl2 {
         Object obj5;
         v3 v3Var2;
         String strD;
-        ?? r4 = f5Var;
-        ?? r5 = z;
+        var r4 = f5Var;
+        var r5 = z;
         if (y50Var instanceof hc2) {
             hc2Var = (hc2) y50Var;
             int i4 = hc2Var.H;
@@ -1572,7 +1572,7 @@ public final class vc2 implements bl2 {
                                                 if (!(objK instanceof bw2)) {
                                                     try {
                                                         if (!(objK instanceof aw2)) {
-                                                            ?? r31 = r3;
+                                                            var r31 = r3;
                                                             if (objK instanceof zv2) {
                                                                 r3 r3VarQ = nb2Var.q(strC, ((zv2) objK).b, ((zv2) objK).a);
                                                                 List list6 = r3VarQ.b;
@@ -1790,7 +1790,7 @@ public final class vc2 implements bl2 {
                                                     }
                                                 }
                                                 f5 f5Var5 = f5Var2;
-                                                ?? r9 = r3;
+                                                var r9 = r3;
                                                 xc2Var = xc2Var2;
                                                 str10 = str3;
                                                 str11 = str5;

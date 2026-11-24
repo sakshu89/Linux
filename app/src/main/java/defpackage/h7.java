@@ -135,8 +135,8 @@ public final class h7 extends k61 implements fq0 {
                 if ((zn1Var.f.e & 8) != 0) {
                     for (dk1 dk1Var = zn1Var.e; dk1Var != null; dk1Var = dk1Var.f) {
                         if ((dk1Var.c & 8) != 0) {
-                            ?? B = dk1Var;
-                            ?? pm1Var = 0;
+                            var B = dk1Var;
+                            var pm1Var = 0;
                             while (B != 0) {
                                 if (B instanceof eg2) {
                                     eg2 eg2Var = (eg2) B;

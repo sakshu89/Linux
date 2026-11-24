@@ -146,8 +146,8 @@ public final class p6 implements qj, v63 {
         zn1 zn1Var;
         t23 t23Var2;
         zn1 zn1Var2;
-        ?? pm1Var;
-        ?? B;
+        Object pm1Var;
+        Object B;
         int i2;
         if (y50Var instanceof fn1) {
             fn1Var = (fn1) y50Var;
@@ -185,8 +185,8 @@ public final class p6 implements qj, v63 {
                     if ((n71VarG.o0.f.e & i5) != 0) {
                         while (dk1Var != null) {
                             if ((dk1Var.c & i5) != 0) {
-                                ?? r14 = obj2;
-                                ?? r13 = dk1Var;
+                                var r14 = obj2;
+                                var r13 = dk1Var;
                                 while (r13 != 0) {
                                     if (r13 instanceof t23) {
                                         t23Var2 = (t23) r13;
@@ -288,8 +288,8 @@ public final class p6 implements qj, v63 {
                         if ((n71VarG2.o0.f.e & i) != 0) {
                             while (dk1Var3 != null) {
                                 if ((dk1Var3.c & i) != 0) {
-                                    ?? B2 = dk1Var3;
-                                    ?? pm1Var2 = 0;
+                                    var B2 = dk1Var3;
+                                    var pm1Var2 = 0;
                                     while (B2 != 0) {
                                         if (B2 instanceof t23) {
                                             t23 t23Var3 = (t23) B2;
@@ -419,8 +419,8 @@ public final class p6 implements qj, v63 {
                     if ((n71VarG.o0.f.e & ArabicShaping.TASHKEEL_BEGIN) != 0) {
                         while (dk1Var != null) {
                             if ((dk1Var.c & ArabicShaping.TASHKEEL_BEGIN) != 0) {
-                                ?? B = dk1Var;
-                                ?? pm1Var = 0;
+                                var B = dk1Var;
+                                var pm1Var = 0;
                                 while (B != 0) {
                                     if (B instanceof t23) {
                                         t23 t23Var2 = (t23) B;

@@ -23,7 +23,7 @@ public abstract class hr4 {
     /* JADX WARN: Type inference failed for: r5v5 */
     /* JADX WARN: Type inference failed for: r5v6 */
     public static List a(String str) {
-        ?? h72Var;
+        Object h72Var;
         List listH;
         str.getClass();
         String string = cs2.V(str).toString();
@@ -52,7 +52,7 @@ public abstract class hr4 {
                 h72Var = new h72(th);
             }
             boolean z = h72Var instanceof h72;
-            ?? r5 = h72Var;
+            var r5 = h72Var;
             if (z) {
                 r5 = ii0.a;
             }

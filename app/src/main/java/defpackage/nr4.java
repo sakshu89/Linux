@@ -97,7 +97,7 @@ public final class nr4 implements zn, i70, dm, b23, ao1, wy, ks4, rg0 {
     /* JADX WARN: Type inference failed for: r7v9 */
     @Override // defpackage.ao1
     public boolean a(dk1 dk1Var) {
-        ?? pm1Var = 0;
+        var pm1Var = 0;
         while (true) {
             int i2 = 0;
             if (dk1Var == 0) {

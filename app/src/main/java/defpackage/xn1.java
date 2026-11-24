@@ -67,10 +67,10 @@ public final class xn1 extends ho1 {
         int i2;
         boolean z4;
         boolean zA = super.a(if1Var, y61Var, l11Var, z);
-        ?? B = this.c;
+        var B = this.c;
         boolean z5 = true;
         if (B.w) {
-            ?? pm1Var = 0;
+            var pm1Var = 0;
             while (B != 0) {
                 if (B instanceof qy1) {
                     this.f = cm4.e((qy1) B, 16);
@@ -276,15 +276,15 @@ public final class xn1 extends ho1 {
                     z2 = false;
                 }
                 if (!z7 && gy1Var2.f == 3 && (gy1Var = this.g) != null) {
-                    ?? r1 = gy1Var.a;
+                    var r1 = gy1Var.a;
                     int size3 = r1.size();
-                    ?? r4 = gy1Var2.a;
+                    var r4 = gy1Var2.a;
                     if (size3 != r4.size()) {
                         z3 = z8;
                         break;
                     }
                     int size4 = r4.size();
-                    ?? r5 = z2;
+                    var r5 = z2;
                     while (true) {
                         if (r5 >= size4) {
                             z3 = z2;
@@ -362,8 +362,8 @@ public final class xn1 extends ho1 {
         for (int i2 = 0; i2 < i; i2++) {
             ((xn1) objArr[i2]).c();
         }
-        ?? B = this.c;
-        ?? pm1Var2 = 0;
+        var B = this.c;
+        var pm1Var2 = 0;
         while (B != 0) {
             if (B instanceof qy1) {
                 ((qy1) B).h0();
@@ -436,8 +436,8 @@ public final class xn1 extends ho1 {
                 co1 co1Var = this.f;
                 co1Var.getClass();
                 long j = co1Var.c;
-                ?? B = dk1Var;
-                ?? pm1Var = 0;
+                var B = dk1Var;
+                var pm1Var = 0;
                 while (B != 0) {
                     if (B instanceof qy1) {
                         ((qy1) B).H(gy1Var, hy1.c, j);
@@ -540,7 +540,7 @@ public final class xn1 extends ho1 {
         if (this.e.f() == 0) {
             return false;
         }
-        ?? B = this.c;
+        var B = this.c;
         if (!B.w) {
             return false;
         }
@@ -549,8 +549,8 @@ public final class xn1 extends ho1 {
         co1 co1Var = this.f;
         co1Var.getClass();
         long j = co1Var.c;
-        ?? B2 = B;
-        ?? pm1Var = 0;
+        var B2 = B;
+        var pm1Var = 0;
         while (B2 != 0) {
             if (B2 instanceof qy1) {
                 ((qy1) B2).H(gy1Var, hy1.a, j);
@@ -596,7 +596,7 @@ public final class xn1 extends ho1 {
             }
         }
         if (B.w) {
-            ?? pm1Var3 = 0;
+            var pm1Var3 = 0;
             while (B != 0) {
                 if (B instanceof qy1) {
                     ((qy1) B).H(gy1Var, hy1.b, j);

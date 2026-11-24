@@ -64,7 +64,7 @@ public final class tw1 extends i1 {
             w23Var.e = new Object[i3];
         }
         w23Var.e[0] = objArr;
-        ?? r0 = i2 == i ? 1 : 0;
+        var r0 = i2 == i ? 1 : 0;
         w23Var.f = r0;
         w23Var.b(i2 - r0, 1);
     }

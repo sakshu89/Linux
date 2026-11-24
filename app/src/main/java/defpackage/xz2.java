@@ -205,10 +205,10 @@ public final class xz2 extends dk1 implements f71, qf0, eg2 {
     @Override // defpackage.eg2
     public final void e0(og2 og2Var) {
         vz2 vz2Var = this.g0;
-        ?? r0 = vz2Var;
+        var r0 = vz2Var;
         if (vz2Var == null) {
             final int i = 0;
-            ?? r1 = new hq0(this) { // from class: vz2
+            var r1 = new hq0(this) { // from class: vz2
                 public final /* synthetic */ xz2 b;
 
                 {

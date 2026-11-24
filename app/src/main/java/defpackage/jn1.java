@@ -80,8 +80,8 @@ public final class jn1 extends dk1 implements t23 {
                 if ((n71VarG.o0.f.e & ArabicShaping.TASHKEEL_BEGIN) != 0) {
                     while (dk1Var != null) {
                         if ((dk1Var.c & ArabicShaping.TASHKEEL_BEGIN) != 0) {
-                            ?? B = dk1Var;
-                            ?? pm1Var = 0;
+                            var B = dk1Var;
+                            var pm1Var = 0;
                             while (B != 0) {
                                 if (B instanceof t23) {
                                     t23Var = (t23) B;
@@ -183,8 +183,8 @@ public final class jn1 extends dk1 implements t23 {
         t23 t23Var;
         zn1 zn1Var;
         int i;
-        ?? r16;
-        ?? B;
+        Object r16;
+        Object B;
         int i2;
         if (y50Var instanceof hn1) {
             hn1Var = (hn1) y50Var;
@@ -250,8 +250,8 @@ public final class jn1 extends dk1 implements t23 {
                 if ((i6 & ArabicShaping.TASHKEEL_BEGIN) != 0) {
                     while (dk1Var != null) {
                         if ((dk1Var.c & i7) != 0) {
-                            ?? r14 = dk1Var;
-                            ?? r17 = obj;
+                            var r14 = dk1Var;
+                            var r17 = obj;
                             while (r14 != 0) {
                                 if (r14 instanceof t23) {
                                     t23 t23Var2 = (t23) r14;
@@ -273,7 +273,7 @@ public final class jn1 extends dk1 implements t23 {
                                                 if (i8 == i5) {
                                                     B = dk1Var2;
                                                 } else {
-                                                    ?? pm1Var = r16 == 0 ? new pm1(new dk1[16]) : r16;
+                                                    var pm1Var = r16 == 0 ? new pm1(new dk1[16]) : r16;
                                                     if (B != 0) {
                                                         pm1Var.b(B);
                                                         B = 0;
@@ -396,8 +396,8 @@ public final class jn1 extends dk1 implements t23 {
                 if ((n71VarG.o0.f.e & ArabicShaping.TASHKEEL_BEGIN) != 0) {
                     while (dk1Var != null) {
                         if ((dk1Var.c & ArabicShaping.TASHKEEL_BEGIN) != 0) {
-                            ?? B = dk1Var;
-                            ?? pm1Var = 0;
+                            var B = dk1Var;
+                            var pm1Var = 0;
                             while (B != 0) {
                                 if (B instanceof t23) {
                                     t23 t23Var2 = (t23) B;
@@ -445,7 +445,7 @@ public final class jn1 extends dk1 implements t23 {
             }
             t23Var = (jn1) t23Var;
         }
-        ?? r9 = t23Var;
+        var r9 = t23Var;
         return jp1.e(jH, r9 != 0 ? r9.K0(i, jp1.e(j, jH), jp1.d(j2, jH)) : 0L);
     }
 
@@ -486,8 +486,8 @@ public final class jn1 extends dk1 implements t23 {
         long j3;
         t23 t23Var;
         zn1 zn1Var;
-        ?? pm1Var;
-        ?? B;
+        Object pm1Var;
+        Object B;
         int i;
         x63 x63Var;
         long j4;
@@ -538,8 +538,8 @@ public final class jn1 extends dk1 implements t23 {
                 if ((i4 & ArabicShaping.TASHKEEL_BEGIN) != 0) {
                     while (dk1Var != null) {
                         if ((dk1Var.c & i5) != 0) {
-                            ?? r12 = dk1Var;
-                            ?? r14 = obj;
+                            var r12 = dk1Var;
+                            var r14 = obj;
                             while (r12 != 0) {
                                 if (r12 instanceof t23) {
                                     t23 t23Var2 = (t23) r12;
@@ -684,8 +684,8 @@ public final class jn1 extends dk1 implements t23 {
                 if ((n71VarG.o0.f.e & ArabicShaping.TASHKEEL_BEGIN) != 0) {
                     while (dk1Var != null) {
                         if ((dk1Var.c & ArabicShaping.TASHKEEL_BEGIN) != 0) {
-                            ?? B = dk1Var;
-                            ?? pm1Var = 0;
+                            var B = dk1Var;
+                            var pm1Var = 0;
                             while (B != 0) {
                                 if (B instanceof t23) {
                                     t23 t23Var2 = (t23) B;

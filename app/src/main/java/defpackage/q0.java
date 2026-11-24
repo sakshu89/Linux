@@ -77,7 +77,7 @@ public final /* synthetic */ class q0 extends gr0 implements hq0 {
         Object value;
         Object g43Var;
         r00 r00Var;
-        ?? r2;
+        Object r2;
         f51 f51Var;
         Integer numValueOf;
         int i = this.k;
@@ -92,7 +92,7 @@ public final /* synthetic */ class q0 extends gr0 implements hq0 {
         z = false;
         int i3 = 1;
         int i4 = 3;
-        ?? r6 = 0;
+        var r6 = 0;
         r6 = 0;
         r6 = 0;
         r6 = 0;

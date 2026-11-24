@@ -227,10 +227,10 @@ public final class he2 {
         long jK0;
         t23 t23Var;
         zn1 zn1Var;
-        ?? B;
+        Object B;
         t23 t23Var2;
         zn1 zn1Var2;
-        ?? B2;
+        Object B2;
         jn1 jn1Var3 = (jn1) this.f.a;
         int i3 = ArabicShaping.TASHKEEL_BEGIN;
         Object obj = null;
@@ -252,8 +252,8 @@ public final class he2 {
                 if ((n71VarG.o0.f.e & i3) != 0) {
                     while (dk1Var != null) {
                         if ((dk1Var.c & i3) != 0) {
-                            ?? pm1Var = 0;
-                            ?? r13 = dk1Var;
+                            var pm1Var = 0;
+                            var r13 = dk1Var;
                             while (r13 != 0) {
                                 if (r13 instanceof t23) {
                                     t23Var2 = (t23) r13;
@@ -350,8 +350,8 @@ public final class he2 {
                 if ((n71VarG2.o0.f.e & i2) != 0) {
                     while (dk1Var3 != null) {
                         if ((dk1Var3.c & i2) != 0) {
-                            ?? r6 = dk1Var3;
-                            ?? pm1Var2 = obj;
+                            var r6 = dk1Var3;
+                            var pm1Var2 = obj;
                             while (r6 != 0) {
                                 if (r6 instanceof t23) {
                                     t23 t23Var3 = (t23) r6;

@@ -591,8 +591,8 @@ public final class do0 implements ao0 {
                         size = i5;
                     }
                 }
-                ?? B = dk1Var2.a;
-                ?? pm1Var4 = 0;
+                var B = dk1Var2.a;
+                var pm1Var4 = 0;
                 while (B != 0) {
                     if (B instanceof k51) {
                         if (((k51) B).k(keyEvent)) {
@@ -634,8 +634,8 @@ public final class do0 implements ao0 {
                     Trace.endSection();
                     return true;
                 }
-                ?? B2 = dk1Var2.a;
-                ?? pm1Var5 = 0;
+                var B2 = dk1Var2.a;
+                var pm1Var5 = 0;
                 while (B2 != 0) {
                     if (B2 instanceof k51) {
                         if (((k51) B2).U(keyEvent)) {

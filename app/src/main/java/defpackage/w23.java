@@ -15,7 +15,7 @@ public final class w23 extends i1 {
         this.c = i3;
         Object[] objArr2 = new Object[i3];
         this.e = objArr2;
-        ?? r5 = i == i2 ? 1 : 0;
+        var r5 = i == i2 ? 1 : 0;
         this.f = r5;
         objArr2[0] = objArr;
         b(i - r5, 1);

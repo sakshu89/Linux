@@ -204,7 +204,7 @@ public final class gk0 {
         InputStream inputStream;
         String str;
         byte b;
-        ?? r13;
+        Object r13;
         byte[] bArr = this.d;
         InputStream inputStream2 = null;
         try {

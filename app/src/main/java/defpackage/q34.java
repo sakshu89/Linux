@@ -115,16 +115,16 @@ public abstract class q34 {
     /* JADX WARN: Type inference failed for: r9v16 */
     public static void b(Context context, Executor executor, l12 l12Var, boolean z) {
         boolean z2;
-        ?? E;
+        Object E;
         byte[] bArr;
         xc0[] xc0VarArrG;
         xc0[] xc0VarArr;
         l12 l12Var2;
         xc0[] xc0VarArr2;
         byte[] bArr2;
-        ?? r7;
+        Object r7;
         byte[] bArr3;
-        ?? r8;
+        Object r8;
         boolean z3;
         ByteArrayInputStream byteArrayInputStream;
         Throwable th;
@@ -134,16 +134,16 @@ public abstract class q34 {
         FileLock fileLockTryLock;
         byte[] bArr4;
         int i;
-        ?? r9;
+        Object r9;
         boolean z4;
-        ?? byteArrayOutputStream;
-        ?? r10;
+        Object byteArrayOutputStream;
+        Object r10;
         sc0 sc0Var;
-        ?? r11;
+        Object r11;
         String str;
         FileInputStream fileInputStreamE;
-        ?? r12;
-        ?? r13;
+        Object r12;
+        Object r13;
         boolean z5;
         Context applicationContext = context.getApplicationContext();
         String packageName = applicationContext.getPackageName();

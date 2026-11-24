@@ -119,7 +119,7 @@ public final class up2 {
         String str9;
         int i4;
         Bitmap bitmap;
-        ?? r6;
+        Object r6;
         String str10;
         long jElapsedRealtime;
         Object objA;
@@ -1407,21 +1407,21 @@ public final class up2 {
     public final Object b(Bitmap bitmap, Rect rect, long j, y50 y50Var) throws Throwable {
         tp2 tp2Var;
         Bitmap bitmap2;
-        ?? r1;
+        Object r1;
         jb jbVarA;
-        ?? r0;
+        Object r0;
         Bitmap bitmap3;
         jb jbVar;
         long j2;
         jb jbVar2;
-        ?? r2;
+        Object r2;
         Bitmap bitmap4;
-        ?? r3;
+        Object r3;
         Bitmap bitmapCreateBitmap;
         Bitmap bitmapCreateBitmap2;
         boolean zSameAs;
         Bitmap bitmap5;
-        ?? r4 = rect;
+        var r4 = rect;
         long j3 = j;
         if (y50Var instanceof tp2) {
             tp2Var = (tp2) y50Var;
@@ -1436,7 +1436,7 @@ public final class up2 {
         }
         Object objN = tp2Var.k;
         int i2 = tp2Var.s;
-        ?? r10 = this.b;
+        var r10 = this.b;
         Bitmap bitmap6 = null;
         t70 t70Var = t70.a;
         try {

@@ -51,7 +51,7 @@ public final class gg1 implements fq0 {
                 gm1 gm1Var = new gm1(arrayList.size());
                 int size = arrayList.size();
                 for (int i2 = 0; i2 < size; i2++) {
-                    ?? r4 = (i51) arrayList.get(i2);
+                    var r4 = (i51) arrayList.get(i2);
                     Object obj2 = r4.b;
                     int i3 = r4.a;
                     Object q41Var = obj2 != null ? new q41(Integer.valueOf(i3), r4.b) : Integer.valueOf(i3);
@@ -60,12 +60,12 @@ public final class gg1 implements fq0 {
                     Object obj3 = z ? null : gm1Var.c[iF];
                     if (obj3 != null) {
                         if (obj3 instanceof yl1) {
-                            ?? r8 = (yl1) obj3;
+                            var r8 = (yl1) obj3;
                             r8.a(r4);
                             r4 = r8;
                         } else {
                             Object[] objArr = yo1.a;
-                            ?? yl1Var = new yl1(2);
+                            var yl1Var = new yl1(2);
                             yl1Var.a(obj3);
                             yl1Var.a(r4);
                             r4 = yl1Var;

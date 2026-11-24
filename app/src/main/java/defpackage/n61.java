@@ -402,9 +402,9 @@ public final class n61 {
     /* JADX WARN: Type inference failed for: r3v1, types: [boolean, int] */
     /* JADX WARN: Type inference failed for: r3v15 */
     public final String d(String str) {
-        ?? r16;
+        Object r16;
         str.getClass();
-        ?? r3 = 1;
+        var r3 = 1;
         if (!str.codePoints().anyMatch(new te(1))) {
             return str;
         }

@@ -27,7 +27,7 @@ public class gr0 extends pp implements fr0, w41, rq0 {
     /* JADX WARN: Type inference failed for: r2v4, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r3v0, types: [java.lang.Object] */
     public final boolean equals(Object obj) {
-        ?? r2;
+        Object r2;
         if (obj == this) {
             return true;
         }

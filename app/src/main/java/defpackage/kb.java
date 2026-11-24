@@ -172,7 +172,7 @@ public final /* synthetic */ class kb implements fq0 {
                                             long[] jArr = hm1Var.a;
                                             int length = jArr.length - 2;
                                             if (length >= 0) {
-                                                ?? r12 = z3;
+                                                var r12 = z3;
                                                 while (true) {
                                                     long j = jArr[r12];
                                                     obj = obj5;

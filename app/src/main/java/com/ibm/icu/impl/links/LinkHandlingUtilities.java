@@ -640,7 +640,7 @@ public class LinkHandlingUtilities {
         /* JADX INFO: Access modifiers changed from: private */
         /* JADX WARN: Type inference failed for: r0v1, types: [T, com.ibm.icu.impl.links.LinkHandlingUtilities$Part] */
         public static /* synthetic */ String lambda$fullEscape$1(Output output, Map.Entry entry) {
-            ?? r0 = (Part) entry.getKey();
+            var r0 = (Part) entry.getKey();
             output.value = r0;
             return r0.fullEscape((List) entry.getValue());
         }

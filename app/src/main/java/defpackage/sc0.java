@@ -30,7 +30,7 @@ public final class sc0 {
     /* JADX WARN: Type inference failed for: r1v7, types: [java.io.Serializable] */
     /* JADX WARN: Type inference failed for: r1v9 */
     public sc0(AssetManager assetManager, Executor executor, l12 l12Var, String str, File file) {
-        ?? r1;
+        Object r1;
         this.a = false;
         this.b = executor;
         this.c = l12Var;

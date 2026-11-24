@@ -33,7 +33,7 @@ public final class nf implements bl2 {
     public static final rf n(nf nfVar, String str) {
         Object next;
         int i;
-        ?? arrayList;
+        Object arrayList;
         ue ueVar = nfVar.a;
         Iterator it = ueVar.b().iterator();
         do {

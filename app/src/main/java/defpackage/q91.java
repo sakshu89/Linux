@@ -107,8 +107,8 @@ public final class q91 implements cp1, ir0, eq1, cq1, bz0, zv, as1, qp, j92, qa2
                 if ((dk1Var.e & 256) != 0) {
                     while (dk1Var != null) {
                         if ((dk1Var.c & 256) != 0) {
-                            ?? B = dk1Var;
-                            ?? pm1Var = 0;
+                            var B = dk1Var;
+                            var pm1Var = 0;
                             while (B != 0) {
                                 if (B instanceof du0) {
                                     du0 du0Var = (du0) B;

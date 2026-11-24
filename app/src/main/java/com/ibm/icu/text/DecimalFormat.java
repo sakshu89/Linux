@@ -121,7 +121,7 @@ public class DecimalFormat extends NumberFormat implements Cloneable {
         }
         this.properties = new DecimalFormatProperties();
         int length = fields2.length;
-        ?? r5 = 0;
+        var r5 = 0;
         int i2 = 0;
         String str = null;
         String str2 = null;

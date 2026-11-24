@@ -46,7 +46,7 @@ public final class nl0 implements zy {
         jl0 jl0Var;
         nl0 nl0Var;
         boolean z;
-        ?? r8;
+        Object r8;
         if (y50Var instanceof ll0) {
             ll0Var = (ll0) y50Var;
             int i = ll0Var.n;
@@ -58,7 +58,7 @@ public final class nl0 implements zy {
         } else {
             ll0Var = new ll0(this, y50Var);
         }
-        ?? r9 = ll0Var.j;
+        var r9 = ll0Var.j;
         int i2 = ll0Var.n;
         try {
             if (i2 == 0) {
@@ -179,7 +179,7 @@ public final class nl0 implements zy {
             ml0Var = new ml0(this, y50Var);
         }
         Object obj = ml0Var.k;
-        ?? r2 = ml0Var.s;
+        var r2 = ml0Var.s;
         t70 t70Var = t70.a;
         try {
             try {

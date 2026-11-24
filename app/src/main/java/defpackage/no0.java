@@ -94,8 +94,8 @@ public final class no0 extends zb0 implements eg2, du0, h30, ep1, t23 {
                 if ((n71VarG.o0.f.e & ArabicShaping.TASHKEEL_BEGIN) != 0) {
                     while (dk1Var != null) {
                         if ((dk1Var.c & ArabicShaping.TASHKEEL_BEGIN) != 0) {
-                            ?? B = dk1Var;
-                            ?? pm1Var = 0;
+                            var B = dk1Var;
+                            var pm1Var = 0;
                             while (B != 0) {
                                 if (B instanceof t23) {
                                     if (oo0.x == ((t23) B).p()) {

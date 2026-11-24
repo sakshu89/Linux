@@ -1978,7 +1978,7 @@ public final class x20 {
         m21 m21Var;
         ArrayList arrayList;
         int i;
-        ?? r3;
+        Object r3;
         int i2;
         int i3;
         int i4;

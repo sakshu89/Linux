@@ -99,7 +99,7 @@ public final class pc0 extends qr2 {
                         int i12 = 8 - ((~(i10 - length)) >>> 31);
                         for (?? r14 = z; r14 < i12; r14++) {
                             if ((255 & j) < 128) {
-                                ?? r15 = (i10 << 3) + r14;
+                                var r15 = (i10 << 3) + r14;
                                 i5 = i7;
                                 nr2 nr2Var = (nr2) objArr3[r15];
                                 i6 = i11;

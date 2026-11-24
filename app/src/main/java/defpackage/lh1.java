@@ -276,7 +276,7 @@ public final class lh1 {
     public final boolean j(n7 n7Var) {
         boolean z;
         dk1 dk1Var;
-        ?? B;
+        Object B;
         boolean z2;
         n71 n71Var;
         boolean z3;
@@ -377,8 +377,8 @@ public final class lh1 {
             dk1 dk1VarX0 = f11Var.X0(zG);
             while (dk1VarX0 != null && (dk1VarX0.e & 4194304) != 0) {
                 if ((dk1VarX0.c & 4194304) != 0) {
-                    ?? r12 = dk1VarX0;
-                    ?? pm1Var2 = 0;
+                    var r12 = dk1VarX0;
+                    var pm1Var2 = 0;
                     while (r12 != 0) {
                         if (r12 instanceof w61) {
                             ((w61) r12).o(zn1Var.c);
@@ -544,8 +544,8 @@ public final class lh1 {
             r72 r72Var = co1.v0;
             for (dk1 dk1VarX0 = f11Var.X0(zG); dk1VarX0 != null && (dk1VarX0.e & 4194304) != 0; dk1VarX0 = dk1VarX0.i) {
                 if ((dk1VarX0.c & 4194304) != 0) {
-                    ?? B = dk1VarX0;
-                    ?? pm1Var2 = 0;
+                    var B = dk1VarX0;
+                    var pm1Var2 = 0;
                     while (B != 0) {
                         if (B instanceof w61) {
                             ((w61) B).o(zn1Var.c);

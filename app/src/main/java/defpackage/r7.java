@@ -2624,8 +2624,8 @@ public final class r7 extends ViewGroup implements it1, o82, ta0, ks1, ViewTreeO
             if ((dk1Var4.e & 16) != 0) {
                 for (dk1 dk1Var5 = dk1Var4; dk1Var5 != null && dk1Var5.w; dk1Var5 = dk1Var5.i) {
                     if ((dk1Var5.c & 16) != 0) {
-                        ?? B = dk1Var5;
-                        ?? pm1Var2 = 0;
+                        var B = dk1Var5;
+                        var pm1Var2 = 0;
                         while (B != 0) {
                             if (B instanceof qy1) {
                                 qy1 qy1Var = (qy1) B;

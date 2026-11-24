@@ -27,7 +27,7 @@ public abstract class pk implements x50, u70, Serializable {
     /* JADX WARN: Type inference failed for: r2v5 */
     @Override // defpackage.x50
     public final void h(Object obj) {
-        ?? r2 = this;
+        var r2 = this;
         while (true) {
             pk pkVar = (pk) r2;
             x50 x50Var = pkVar.a;

@@ -42,10 +42,10 @@ public abstract class zn4 {
         int next;
         int i;
         int i2;
-        ?? r4;
+        Object r4;
         long j;
         Throwable th;
-        ?? r5;
+        Object r5;
         ExecutorService executorService;
         boolean zIsTerminated;
         boolean zIsTerminated2;

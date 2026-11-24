@@ -759,13 +759,13 @@ public final class jk0 {
             Objects.toString(bufferedOutputStream);
         }
         ByteOrder byteOrder = ByteOrder.LITTLE_ENDIAN;
-        ?? fk0Var = new fk0(bufferedInputStream, byteOrder);
+        var fk0Var = new fk0(bufferedInputStream, byteOrder);
         jo joVar = new jo(bufferedOutputStream, byteOrder);
         byte[] bArr = E;
         f(fk0Var, joVar, bArr.length);
         byte[] bArr2 = F;
         fk0Var.skipBytes(bArr2.length + 4);
-        ?? r7 = 0;
+        var r7 = 0;
         r7 = 0;
         try {
             try {
@@ -890,7 +890,7 @@ public final class jk0 {
                                 fk0Var.read(bArr11);
                                 byte b2 = (byte) (bArr11[0] | 8);
                                 bArr11[0] = b2;
-                                ?? r15 = ((b2 >> 1) & 1) == 1;
+                                var r15 = ((b2 >> 1) & 1) == 1;
                                 joVar2.write(bArr4);
                                 joVar2.e(i14);
                                 joVar2.write(bArr11);

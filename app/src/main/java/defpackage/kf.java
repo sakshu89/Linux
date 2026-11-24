@@ -118,7 +118,7 @@ public final class kf implements pi0, wu2, up, ir0, j92 {
             boolean z = oo1Var.c;
             Bundle bundle = oo1Var.a;
             if (iconCompat != null) {
-                ?? r18 = obj;
+                var r18 = obj;
                 int i9 = iconCompat.a;
                 switch (i9) {
                     case -1:

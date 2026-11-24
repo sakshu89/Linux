@@ -50,9 +50,9 @@ public abstract class ul4 {
         int i7;
         int[] iArr3;
         int i8;
-        ?? r20;
+        Object r20;
         int i9;
-        ?? r2;
+        Object r2;
         int i10;
         int i11;
         int i12;
@@ -136,13 +136,13 @@ public abstract class ul4 {
                                     iArr2 = iArr5;
                                     i7 = i27;
                                     iArr3 = iArr6;
-                                    ?? r3 = z3;
+                                    var r3 = z3;
                                     int i34 = i33 == true ? 1 : 0;
                                     int iMax3 = i34 == true ? 1 : 0;
                                     int iMax4 = iMax3;
                                     int i35 = i19;
                                     int iMin2 = i20;
-                                    ?? r21 = i33;
+                                    var r21 = i33;
                                     while (i34 < r3) {
                                         int i36 = i34 + 1;
                                         int i37 = iArr3[i34];
@@ -231,10 +231,10 @@ public abstract class ul4 {
                                                     boolean[] zArr5 = new boolean[9];
                                                     int i51 = i25;
                                                     int i52 = i51;
-                                                    ?? r4 = r3;
+                                                    var r4 = r3;
                                                     while (i51 < r4) {
                                                         int i53 = iArr3[i51];
-                                                        ?? r36 = r4;
+                                                        var r36 = r4;
                                                         int i54 = (i53 % i4) - i50;
                                                         int i55 = i51;
                                                         float f5 = ((i54 * 2.0f) / f) - 1.0f;
@@ -242,8 +242,8 @@ public abstract class ul4 {
                                                         int i56 = i20;
                                                         int i57 = i25;
                                                         int iC = ky3.c((i54 * 8) / i48, i57, 8);
-                                                        ?? r38 = Math.abs(f5 - f6) <= 0.3f ? z3 : i57;
-                                                        ?? r34 = Math.abs(f5 + f6) <= 0.3f ? z3 : i57;
+                                                        var r38 = Math.abs(f5 - f6) <= 0.3f ? z3 : i57;
+                                                        var r34 = Math.abs(f5 + f6) <= 0.3f ? z3 : i57;
                                                         if (r38 != 0) {
                                                             zArr4[iC] = z3;
                                                         }
@@ -284,7 +284,7 @@ public abstract class ul4 {
                                                                 int iMax6 = Math.max(z4 ? 1 : 0, iMin2 - iMax5);
                                                                 int iMin4 = Math.min(i6 - 2, iMax4 + iMax5);
                                                                 int i63 = 0;
-                                                                ?? r5 = z4;
+                                                                var r5 = z4;
                                                                 if (iMax6 <= iMin4) {
                                                                     while (true) {
                                                                         int iMax7 = Math.max((int) r5, i50 - iMax5);

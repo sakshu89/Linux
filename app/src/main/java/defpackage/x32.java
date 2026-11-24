@@ -324,8 +324,8 @@ public final class x32 {
         Object objPoll;
         String str;
         String str2;
-        ?? r7;
-        ?? r6;
+        Object r7;
+        Object r6;
         int i;
         oo ooVar;
         oo ooVarL;

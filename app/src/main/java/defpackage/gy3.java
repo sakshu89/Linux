@@ -54,14 +54,14 @@ public final class gy3 implements Map, Serializable {
         boolean z;
         int i2;
         char c;
-        ?? r3;
+        Object r3;
         char c2;
         short[] sArr;
         boolean z2;
         int i3;
-        ?? r16;
+        Object r16;
         boolean z3;
-        ?? r4;
+        Object r4;
         Object[] objArr2;
         ox3 ox3Var;
         boolean z4;
@@ -71,7 +71,7 @@ public final class gy3 implements Map, Serializable {
             return j;
         }
         ox3 ox3Var2 = null;
-        ?? r5 = 0;
+        var r5 = 0;
         ox3 ox3Var3 = null;
         ox3 ox3Var4 = null;
         boolean z5 = false;

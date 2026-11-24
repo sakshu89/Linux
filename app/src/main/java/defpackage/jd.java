@@ -177,8 +177,8 @@ public final class jd extends k61 implements vq0 {
                 if ((dk1Var2.e & 32768) != 0) {
                     while (dk1Var2 != null) {
                         if ((dk1Var2.c & 32768) != 0) {
-                            ?? B = dk1Var2;
-                            ?? pm1Var = 0;
+                            var B = dk1Var2;
+                            var pm1Var = 0;
                             while (B != 0) {
                                 if (B instanceof h30) {
                                     dk1 dk1Var3 = ((dk1) ((h30) B)).a;

@@ -135,8 +135,8 @@ public final class f11 extends co1 {
                                     break loop0;
                                 }
                                 if ((dk1Var.c & 16) != 0) {
-                                    ?? B = dk1Var;
-                                    ?? pm1Var = 0;
+                                    var B = dk1Var;
+                                    var pm1Var = 0;
                                     while (B != 0) {
                                         if (B instanceof qy1) {
                                             if (((qy1) B).Y()) {
