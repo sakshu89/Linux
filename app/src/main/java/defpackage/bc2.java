@@ -623,7 +623,7 @@ public final class bc2 {
         String string5;
         Object h72Var;
         Object h72Var2;
-        ?? BooleanValue;
+        Object BooleanValue;
         String string6;
         AccessibilityNodeInfo.CollectionItemInfo collectionItemInfo;
         Object h72Var3;
@@ -1281,7 +1281,7 @@ public final class bc2 {
         String string;
         ArrayList arrayList2 = new ArrayList();
         int size = arrayList.size();
-        ?? r5 = 0;
+        var r5 = 0;
         int i2 = 0;
         while (i2 < size) {
             Object obj = arrayList.get(i2);
@@ -1289,7 +1289,7 @@ public final class bc2 {
             AccessibilityNodeInfo accessibilityNodeInfo = (AccessibilityNodeInfo) obj;
             if (f(accessibilityNodeInfo) && m(accessibilityNodeInfo, identityHashMap) == z && !g(accessibilityNodeInfo, identityHashMap, r5, z)) {
                 String strK = k(accessibilityNodeInfo);
-                ?? A = a(accessibilityNodeInfo, identityHashMap);
+                var A = a(accessibilityNodeInfo, identityHashMap);
                 CharSequence contentDescription = accessibilityNodeInfo.getContentDescription();
                 String string2 = contentDescription != null ? contentDescription.toString() : null;
                 String strA = "";
@@ -1460,14 +1460,14 @@ public final class bc2 {
     /* JADX WARN: Type inference failed for: r4v8, types: [java.util.ArrayList] */
     public static List v(ArrayList arrayList, IdentityHashMap identityHashMap) {
         Set set;
-        ?? r18;
+        Object r18;
         zb2 zb2Var;
-        ?? r19;
+        Object r19;
         Rect rectG;
         int size;
-        ?? r2;
-        ?? r4;
-        ?? r110;
+        Object r2;
+        Object r4;
+        Object r110;
         Iterator it;
         Object next;
         int i2;
@@ -1549,7 +1549,7 @@ public final class bc2 {
                         ArrayList arrayList6 = new ArrayList();
                         int size6 = arrayList4.size();
                         int i11 = 0;
-                        ?? r5 = arrayList5;
+                        var r5 = arrayList5;
                         while (i11 < size6) {
                             Object obj3 = arrayList4.get(i11);
                             i11++;
@@ -1579,7 +1579,7 @@ public final class bc2 {
                                                         Object obj4 = r4.get(r2);
                                                         int i12 = r2 + 1;
                                                         ac2Var2 = (ac2) obj4;
-                                                        ?? r111 = r4;
+                                                        var r111 = r4;
                                                         if (ac2Var2.a != mz.D(listW2)) {
                                                         }
                                                         r2 = i12;
@@ -1669,7 +1669,7 @@ public final class bc2 {
                                                         Object obj7 = r4.get(r2);
                                                         int i13 = r2 + 1;
                                                         ac2Var2 = (ac2) obj7;
-                                                        ?? r112 = r4;
+                                                        var r112 = r4;
                                                         if (ac2Var2.a != mz.D(listW2)) {
                                                         }
                                                         r2 = i13;
@@ -1764,7 +1764,7 @@ public final class bc2 {
                                                 Object obj10 = r4.get(r2);
                                                 int i14 = r2 + 1;
                                                 ac2Var2 = (ac2) obj10;
-                                                ?? r113 = r4;
+                                                var r113 = r4;
                                                 if (ac2Var2.a != mz.D(listW2) && ac2Var2.c.bottom <= rectG.top) {
                                                     arrayList9.add(obj10);
                                                 }

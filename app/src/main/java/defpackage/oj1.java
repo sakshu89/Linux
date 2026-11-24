@@ -26,11 +26,11 @@ public final class oj1 {
     /* JADX WARN: Type inference failed for: r9v4, types: [an1] */
     public final Object a(Object obj, hq0 hq0Var, y50 y50Var) throws Throwable {
         nj1 nj1Var;
-        ?? r9;
+        Object r9;
         int i;
-        ?? r10;
+        Object r10;
         Object obj2;
-        ?? r8;
+        Object r8;
         if (y50Var instanceof nj1) {
             nj1Var = (nj1) y50Var;
             int i2 = nj1Var.s;
@@ -102,7 +102,7 @@ public final class oj1 {
                     nj1Var.s = 2;
                     objJ = r10.j(nj1Var);
                     if (objJ != t70Var) {
-                        ?? r6 = r9;
+                        var r6 = r9;
                         obj2 = obj;
                         r8 = r6;
                         if (this.b == obj2) {

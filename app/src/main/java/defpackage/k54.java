@@ -856,9 +856,9 @@ public abstract class k54 {
     /* JADX WARN: Type inference failed for: r7v15 */
     /* JADX WARN: Type inference failed for: r7v9 */
     public static final void j(eo2 eo2Var, zt1 zt1Var, hq0 hq0Var, hq0 hq0Var2, x20 x20Var, int i) {
-        ?? r5;
+        Object r5;
         int i2;
-        ?? r14;
+        Object r14;
         x20Var.X(990231241);
         int i3 = (x20Var.h(eo2Var) ? 4 : 2) | i | (x20Var.d(zt1Var.ordinal()) ? 32 : 16) | (x20Var.h(hq0Var) ? 256 : 128);
         if ((i & UCharacterProperty.SCRIPT_X_WITH_OTHER) == 0) {
@@ -909,7 +909,7 @@ public abstract class k54 {
             dz2.b("SONIC", null, ki4.c(4293063935L), nc4.c(19), np0.e, ev2.b, nc4.c(6), null, 0L, 0, false, 0, 0, yz2.a(((v33) x20Var.j(w33.a)).h, 0L, 0L, null, null, 0L, new vj2(2, sz.b(0.5f, ki4.c(4284006399L))), 0L, null, 16769023), x20Var, 102261126, 0, 130602);
             h(x20Var, w44.c(bk1Var, 6.0f));
             dz2.b("AI ASSISTANT", null, ki4.c(4286042858L), nc4.c(9), null, ev2.c, nc4.b(1.8d), null, 0L, 0, false, 0, 0, null, x20Var, 100688262, 0, 261738);
-            ?? r6 = x20Var;
+            var r6 = x20Var;
             r6.p(true);
             Object obj = r20.a;
             zt1 zt1Var2 = zt1.a;
@@ -948,7 +948,7 @@ public abstract class k54 {
             }
             r6.p(r14);
             boolean z2 = eo2Var.k;
-            ?? r13 = zt1Var == zt1Var2 ? 1 : r14;
+            var r13 = zt1Var == zt1Var2 ? 1 : r14;
             int i5 = ((i2 & 112) == 32 ? 1 : r14) | ((i2 & 896) == 256 ? 1 : r14);
             Object objL2 = r6.L();
             if (i5 != 0 || objL2 == obj) {

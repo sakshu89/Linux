@@ -50,7 +50,7 @@ public final class gg2 {
     /* JADX WARN: Type inference failed for: r6v1 */
     /* JADX WARN: Type inference failed for: r6v7 */
     public final l42 a(co1 co1Var) {
-        ?? B;
+        Object B;
         gg2 gg2VarL = l();
         if (gg2VarL == null) {
             return l42.e;
@@ -64,7 +64,7 @@ public final class gg2 {
             if (dk1Var != null) {
                 if ((dk1Var.c & 8) != 0) {
                     B = dk1Var;
-                    ?? pm1Var = 0;
+                    var pm1Var = 0;
                     while (B != 0) {
                         if (B instanceof eg2) {
                             if (((eg2) B).h()) {
@@ -230,9 +230,9 @@ public final class gg2 {
     /* JADX WARN: Type inference failed for: r6v7 */
     /* JADX WARN: Type inference failed for: r7v10 */
     public final eg2 f() {
-        ?? B;
+        Object B;
         boolean z = this.d.c;
-        ?? r4 = 0;
+        var r4 = 0;
         r4 = 0;
         r4 = 0;
         r4 = 0;
@@ -243,7 +243,7 @@ public final class gg2 {
                 loop3: while (dk1Var != null) {
                     if ((dk1Var.c & 8) != 0) {
                         B = dk1Var;
-                        ?? pm1Var = 0;
+                        var pm1Var = 0;
                         while (true) {
                             if (B != 0) {
                                 if (B instanceof eg2) {
@@ -295,8 +295,8 @@ public final class gg2 {
                 B = 0;
                 while (dk1Var3 != null) {
                     if ((dk1Var3.c & 8) != 0) {
-                        ?? B2 = dk1Var3;
-                        ?? pm1Var2 = 0;
+                        var B2 = dk1Var3;
+                        var pm1Var2 = 0;
                         while (B2 != 0) {
                             if (B2 instanceof eg2) {
                                 eg2 eg2Var = (eg2) B2;

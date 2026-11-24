@@ -435,7 +435,7 @@ public final class xc2 {
         String string5;
         ArrayList arrayList2 = new ArrayList();
         int size = arrayList.size();
-        ?? r2 = 0;
+        var r2 = 0;
         int i = 0;
         while (i < size) {
             Object obj = arrayList.get(i);
@@ -480,7 +480,7 @@ public final class xc2 {
                     patternCompile.getClass();
                     boolean zFind = patternCompile.matcher(strO).find();
                     CharSequence className = accessibilityNodeInfo2.getClassName();
-                    ?? r11 = (className == null || (string3 = className.toString()) == null || !js2.e(string3, "Button", r2)) ? r2 : 1;
+                    var r11 = (className == null || (string3 = className.toString()) == null || !js2.e(string3, "Button", r2)) ? r2 : 1;
                     Set setC = wh2.c("close", "dismiss", "close button", "dismiss button", "बंद करें");
                     if (r11 != 0 && !arrayList3.isEmpty()) {
                         int size2 = arrayList3.size();

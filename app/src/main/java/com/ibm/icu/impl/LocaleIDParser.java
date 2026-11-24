@@ -478,9 +478,9 @@ public final class LocaleIDParser {
     /* JADX WARN: Type inference failed for: r1v8 */
     /* JADX WARN: Type inference failed for: r1v9 */
     public Map<String, String> getKeywordMap() {
-        ?? treeMap;
+        Object treeMap;
         if (this.keywords == null) {
-            ?? r1 = 0;
+            var r1 = 0;
             r1 = 0;
             if (setToKeywordStart()) {
                 do {

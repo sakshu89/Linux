@@ -69,7 +69,7 @@ public final class b40 {
         }
         this.c = z;
         boolean z2 = this.d;
-        ?? r0 = a40Var.d;
+        var r0 = a40Var.d;
         String[] strArr = a40Var.c;
         if (strArr != null) {
             String[] enabledCipherSuites2 = sSLSocket.getEnabledCipherSuites();

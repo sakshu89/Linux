@@ -200,7 +200,7 @@ public final class so2 extends b83 {
         in2 in2Var;
         boolean z;
         t42 t42Var;
-        ?? r4;
+        Object r4;
         Object objU;
         ho2 ho2Var2 = ho2Var;
         in2 in2Var2 = so2Var.b;
@@ -257,7 +257,7 @@ public final class so2 extends b83 {
                         c3 = 4;
                     }
                     t42Var = new t42();
-                    ?? r15 = (!ho2Var2.a || so2Var.H) ? 0 : z ? 1 : 0;
+                    var r15 = (!ho2Var2.a || so2Var.H) ? 0 : z ? 1 : 0;
                     so2Var.x = z;
                     sp spVarC = pn2.c(pn2Var, r15, so2Var.B.b, 4);
                     qo2 qo2Var = new qo2((so2) so2Var, t42Var);
@@ -300,7 +300,7 @@ public final class so2 extends b83 {
             so2Var.x = false;
             Float f = new Float(0.0f);
             jr2Var.getClass();
-            ?? r11 = 0;
+            var r11 = 0;
             jr2Var.j(null, f);
             while (true) {
                 Object value3 = jr2Var2.getValue();

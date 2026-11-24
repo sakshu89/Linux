@@ -225,7 +225,7 @@ public final class tt0 {
         Set set2;
         String str5;
         String str6;
-        ?? arrayList = ii0.a;
+        var arrayList = ii0.a;
         if (y50Var instanceof qt0) {
             qt0Var = (qt0) y50Var;
             int i7 = qt0Var.u;

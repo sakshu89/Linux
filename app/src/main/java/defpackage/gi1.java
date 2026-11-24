@@ -62,8 +62,8 @@ public final class gi1 implements bl2 {
     public static final gl2 q(gi1 gi1Var, String str, String str2, String str3, boolean z, f5 f5Var, String str4, r3 r3Var) {
         String str5;
         Map mapSingletonMap;
-        ?? r14 = gi1Var.d;
-        ?? L = mz.L(r3Var.d, 4);
+        var r14 = gi1Var.d;
+        var L = mz.L(r3Var.d, 4);
         if (L.isEmpty()) {
             List listL = mz.L(r3Var.b, 4);
             L = new ArrayList(nz.d(listL));

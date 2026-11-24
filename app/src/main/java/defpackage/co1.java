@@ -812,8 +812,8 @@ public abstract class co1 extends mf1 implements jh1, y61, jt1 {
             dk1VarV0 = V0();
             for (dk1 dk1VarX1 = X0(zG); dk1VarX1 != null && (dk1VarX1.e & 128) != 0; dk1VarX1 = dk1VarX1.i) {
                 if ((dk1VarX1.c & 128) != 0) {
-                    ?? B = dk1VarX1;
-                    ?? pm1Var = 0;
+                    var B = dk1VarX1;
+                    var pm1Var = 0;
                     while (B != 0) {
                         if (B instanceof w61) {
                             ((w61) B).r(this.c);
@@ -892,8 +892,8 @@ public abstract class co1 extends mf1 implements jh1, y61, jt1 {
         }
         for (dk1 dk1VarX0 = X0(zG); dk1VarX0 != null && (dk1VarX0.e & 4194304) != 0; dk1VarX0 = dk1VarX0.i) {
             if ((dk1VarX0.c & 4194304) != 0) {
-                ?? B = dk1VarX0;
-                ?? pm1Var = 0;
+                var B = dk1VarX0;
+                var pm1Var = 0;
                 while (B != 0) {
                     if (B instanceof w61) {
                         ((w61) B).o(this);
@@ -1044,7 +1044,7 @@ public abstract class co1 extends mf1 implements jh1, y61, jt1 {
     /* JADX WARN: Type inference failed for: r8v26 */
     /* JADX WARN: Type inference failed for: r8v27 */
     public final void j1(dk1 dk1Var, ao1 ao1Var, long j, pw0 pw0Var, int i, boolean z, float f, boolean z2) {
-        ?? B;
+        Object B;
         int i2;
         if (dk1Var == null) {
             b1(ao1Var, j, pw0Var, i, z);
@@ -1053,8 +1053,8 @@ public abstract class co1 extends mf1 implements jh1, y61, jt1 {
         int i3 = i;
         char c = 3;
         if (i3 == 3 || i3 == 4) {
-            ?? r4 = dk1Var;
-            ?? pm1Var = 0;
+            var r4 = dk1Var;
+            var pm1Var = 0;
             while (r4 != 0) {
                 if (r4 instanceof qy1) {
                     long jQ = ((qy1) r4).q();
@@ -1256,8 +1256,8 @@ public abstract class co1 extends mf1 implements jh1, y61, jt1 {
         Object objN0 = null;
         for (dk1 dk1Var = n71Var.o0.e; dk1Var != null; dk1Var = dk1Var.f) {
             if ((dk1Var.c & 64) != 0) {
-                ?? B = dk1Var;
-                ?? pm1Var = 0;
+                var B = dk1Var;
+                var pm1Var = 0;
                 while (B != 0) {
                     if (B instanceof lu1) {
                         objN0 = ((lu1) B).n0(objN0);
@@ -1456,8 +1456,8 @@ public abstract class co1 extends mf1 implements jh1, y61, jt1 {
                 if (zG || (dk1VarV0 = dk1VarV0.f) != null) {
                     for (dk1 dk1VarX0 = X0(zG); dk1VarX0 != null && (dk1VarX0.e & 4) != 0; dk1VarX0 = dk1VarX0.i) {
                         if ((dk1VarX0.c & 4) != 0) {
-                            ?? B = dk1VarX0;
-                            ?? pm1Var = 0;
+                            var B = dk1VarX0;
+                            var pm1Var = 0;
                             while (B != 0) {
                                 if (B instanceof qf0) {
                                     ((qf0) B).o0();

@@ -285,7 +285,7 @@ public abstract class ie2 {
                             if (zC) {
                                 if (!zG) {
                                     Object obj13 = accessibilityNodeInfo5;
-                                    ?? r3 = z2;
+                                    var r3 = z2;
                                     while (true) {
                                         if (r3 < 4) {
                                             AccessibilityNodeInfo accessibilityNodeInfo12 = (AccessibilityNodeInfo) obj13;

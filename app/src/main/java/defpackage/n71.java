@@ -808,8 +808,8 @@ public final class n71 implements d20, jt1, o20 {
         if ((dk1Var.e & 16) != 0) {
             while (dk1Var != null) {
                 if ((dk1Var.c & 16) != 0) {
-                    ?? B = dk1Var;
-                    ?? pm1Var = 0;
+                    var B = dk1Var;
+                    var pm1Var = 0;
                     while (B != 0) {
                         if (B instanceof qy1) {
                             ((qy1) B).b0();

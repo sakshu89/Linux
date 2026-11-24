@@ -239,7 +239,7 @@ public abstract class BasicTimeZone extends TimeZone {
                     } else {
                         long[] startTimes = timeArrayTimeZoneRule.getStartTimes();
                         int timeType = timeArrayTimeZoneRule.getTimeType();
-                        ?? r15 = z2;
+                        var r15 = z2;
                         while (true) {
                             if (r15 >= startTimes.length) {
                                 bitSet2 = bitSet2;

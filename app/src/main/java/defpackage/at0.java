@@ -71,14 +71,14 @@ public final class at0 extends nu2 implements hq0 {
         mt0 mt0Var;
         gd1 gd1Var;
         JSONObject jSONObject;
-        ?? r14;
+        Object r14;
         hd1 hd1Var;
         x00 x00Var;
         String str;
         hq0 hq0Var;
         an1 an1Var;
         int i;
-        ?? r5;
+        Object r5;
         gd1 gd1Var2;
         boolean z;
         JSONObject jSONObjectPut;
@@ -91,7 +91,7 @@ public final class at0 extends nu2 implements hq0 {
         x00 x00Var2;
         boolean z3;
         Object obj2;
-        ?? r6;
+        Object r6;
         String strOptString;
         q43 q43Var = q43.a;
         t70 t70Var = t70.a;
@@ -208,7 +208,7 @@ public final class at0 extends nu2 implements hq0 {
                     throw th;
                 }
                 if (mt0Var.J && !mt0Var.v && !mt0Var.w && hd1Var.b(gd1Var)) {
-                    ?? r20 = r14;
+                    var r20 = r14;
                     long j = gd1Var.a;
                     this.f = an1Var;
                     this.i = mt0Var;
@@ -245,7 +245,7 @@ public final class at0 extends nu2 implements hq0 {
                 mt0 mt0Var5 = mt0Var;
                 gd1Var2 = gd1Var;
                 JSONObject jSONObject6 = jSONObject;
-                ?? r16 = r14;
+                var r16 = r14;
                 an1 an1Var6 = an1Var;
                 z = false;
                 jSONObjectPut = new JSONObject().put("status", "CANCELLED").put("retryable", false).put("spoken", "");

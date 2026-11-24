@@ -479,7 +479,7 @@ public abstract class yc3 {
         ArrayList arrayList3;
         int i21;
         int i22;
-        ?? arrayList4;
+        Object arrayList4;
         int i23;
         Rect rect;
         x42 x42Var3;

@@ -371,7 +371,7 @@ public final class cl1 implements oh1 {
                 }
                 nl1 nl1Var3 = nl1Var;
                 int size = arrayList.size();
-                ?? r2 = new zw1[size];
+                var r2 = new zw1[size];
                 for (int i23 = 0; i23 < size; i23++) {
                     r2[i23] = ml1Var2.b(i23);
                 }
@@ -380,7 +380,7 @@ public final class cl1 implements oh1 {
                 int i24 = 0;
                 int i25 = 0;
                 int i26 = 0;
-                ?? r3 = r2;
+                var r3 = r2;
                 while (i25 < i7) {
                     int[] iArr4 = iArrCopyOf2;
                     int i27 = iArr4[i25];
@@ -396,7 +396,7 @@ public final class cl1 implements oh1 {
                         c = 65535;
                         iG2 = q40.g(jA4) == Integer.MAX_VALUE ? Integer.MAX_VALUE : q40.g(jA4) - i26;
                     }
-                    ?? r8 = r3;
+                    var r8 = r3;
                     int[] iArr5 = iArrCopyOf;
                     int i28 = i12;
                     int i29 = i8;

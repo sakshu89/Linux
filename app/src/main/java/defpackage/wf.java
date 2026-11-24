@@ -55,7 +55,7 @@ public final class wf implements nh0 {
     /* JADX WARN: Type inference failed for: r6v4, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r6v7, types: [java.util.List] */
     public ArrayList c() {
-        ?? arrayList;
+        Object arrayList;
         ArrayList arrayList2 = new ArrayList();
         Context context = this.a;
         Bundle bundle = null;

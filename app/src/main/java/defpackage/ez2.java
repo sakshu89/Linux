@@ -68,10 +68,10 @@ public final class ez2 {
         int i14;
         int i15;
         long jA;
-        ?? IsFallbackLineSpacingEnabled;
+        Object IsFallbackLineSpacingEnabled;
         long jA2;
         int i16;
-        ?? r6;
+        Object r6;
         int i17;
         this.a = textPaint;
         this.b = truncateAt;

@@ -200,9 +200,9 @@ public final /* synthetic */ class g7 extends gr0 implements fq0 {
         int i10;
         Object obj5;
         boolean z4;
-        ?? r21;
+        Object r21;
         int i11 = this.k;
-        ?? r3 = 0;
+        var r3 = 0;
         int i12 = 3;
         q43 q43Var = q43.a;
         Object obj6 = this.b;
@@ -470,14 +470,14 @@ public final /* synthetic */ class g7 extends gr0 implements fq0 {
                                                 bq2.e(arrayList10, zp2Var8, r3);
                                                 ArrayList arrayList11 = new ArrayList();
                                                 int size12 = arrayList10.size();
-                                                ?? r14 = r3;
-                                                ?? r2 = arrayList10;
+                                                var r14 = r3;
+                                                var r2 = arrayList10;
                                                 while (r14 < size12) {
                                                     Object obj8 = r2.get(r14);
                                                     int i26 = r14 + 1;
                                                     ArrayList arrayList12 = arrayList8;
                                                     zp2 zp2Var11 = (zp2) obj8;
-                                                    ?? r4 = r2;
+                                                    var r4 = r2;
                                                     if (bq2Var.K(zp2Var11)) {
                                                         while (true) {
                                                             if (zp2Var11 == null || zp2Var11 == zp2Var9) {

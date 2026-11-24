@@ -94,7 +94,7 @@ public final class f60 extends nu2 implements vq0 {
         Object obj3 = this.t;
         Object obj4 = this.w;
         Serializable serializable = this.u;
-        ?? r8 = 2;
+        var r8 = 2;
         Object obj5 = this.v;
         switch (i) {
             case 0:

@@ -52,8 +52,8 @@ public abstract class jd4 {
             if ((n71VarG.o0.f.e & ArabicShaping.TASHKEEL_BEGIN) != 0) {
                 while (dk1Var != null) {
                     if ((dk1Var.c & ArabicShaping.TASHKEEL_BEGIN) != 0) {
-                        ?? B = dk1Var;
-                        ?? pm1Var = 0;
+                        var B = dk1Var;
+                        var pm1Var = 0;
                         while (B != 0) {
                             if (B instanceof t23) {
                                 t23 t23Var = (t23) B;
@@ -138,8 +138,8 @@ public abstract class jd4 {
             if ((n71VarG.o0.f.e & ArabicShaping.TASHKEEL_BEGIN) != 0) {
                 while (dk1Var2 != null) {
                     if ((dk1Var2.c & ArabicShaping.TASHKEEL_BEGIN) != 0) {
-                        ?? B = dk1Var2;
-                        ?? pm1Var = 0;
+                        var B = dk1Var2;
+                        var pm1Var = 0;
                         while (B != 0) {
                             boolean zBooleanValue = true;
                             if (B instanceof t23) {
@@ -238,8 +238,8 @@ public abstract class jd4 {
                 while (true) {
                     if (dk1Var4 != null && dk1Var4.w) {
                         if ((dk1Var4.c & ArabicShaping.TASHKEEL_BEGIN) != 0) {
-                            ?? B = dk1Var4;
-                            ?? pm1Var2 = 0;
+                            var B = dk1Var4;
+                            var pm1Var2 = 0;
                             while (B != 0) {
                                 if (B instanceof t23) {
                                     t23 t23Var = (t23) B;
@@ -341,8 +341,8 @@ public abstract class jd4 {
                 while (true) {
                     if (dk1Var5 != null && dk1Var5.w) {
                         if ((dk1Var5.c & ArabicShaping.TASHKEEL_BEGIN) != 0) {
-                            ?? B = dk1Var5;
-                            ?? pm1Var2 = 0;
+                            var B = dk1Var5;
+                            var pm1Var2 = 0;
                             while (B != 0) {
                                 if (B instanceof t23) {
                                     t23 t23Var2 = (t23) B;

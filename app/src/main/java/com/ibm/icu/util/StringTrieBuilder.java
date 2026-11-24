@@ -186,8 +186,8 @@ public abstract class StringTrieBuilder {
         /* JADX WARN: Type inference failed for: r4v0, types: [com.ibm.icu.util.StringTrieBuilder$DynamicBranchNode, com.ibm.icu.util.StringTrieBuilder$Node, com.ibm.icu.util.StringTrieBuilder$ValueNode] */
         @Override // com.ibm.icu.util.StringTrieBuilder.ValueNode, com.ibm.icu.util.StringTrieBuilder.Node
         public Node add(StringTrieBuilder stringTrieBuilder, CharSequence charSequence, int i, int i2) {
-            ?? r0;
-            ?? r10;
+            Object r0;
+            Object r10;
             if (i == charSequence.length()) {
                 if (this.hasValue) {
                     og.i("Duplicate string.");
@@ -210,7 +210,7 @@ public abstract class StringTrieBuilder {
                 char cCharAt = this.strings.charAt(i3);
                 char cCharAt2 = charSequence.charAt(i);
                 if (cCharAt != cCharAt2) {
-                    ?? dynamicBranchNode = new DynamicBranchNode();
+                    var dynamicBranchNode = new DynamicBranchNode();
                     int i6 = this.stringOffset;
                     if (i3 == i6) {
                         if (this.hasValue) {
@@ -221,7 +221,7 @@ public abstract class StringTrieBuilder {
                         this.stringOffset++;
                         int i7 = this.length - 1;
                         this.length = i7;
-                        ?? r11 = this;
+                        var r11 = this;
                         if (i7 <= 0) {
                             r11 = this.next;
                         }
@@ -300,7 +300,7 @@ public abstract class StringTrieBuilder {
         /* JADX WARN: Type inference failed for: r5v5 */
         @Override // com.ibm.icu.util.StringTrieBuilder.Node
         public Node register(StringTrieBuilder stringTrieBuilder) {
-            ?? intermediateValueNode;
+            Object intermediateValueNode;
             this.next = this.next.register(stringTrieBuilder);
             int maxLinearMatchLength = stringTrieBuilder.getMaxLinearMatchLength();
             while (true) {

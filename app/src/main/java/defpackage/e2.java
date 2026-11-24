@@ -67,7 +67,7 @@ public final /* synthetic */ class e2 implements hq0 {
         boolean zPerformAction2;
         AccessibilityNodeInfo accessibilityNodeInfoF2;
         fz2 fz2Var;
-        ?? r3;
+        Object r3;
         Object value;
         long jLongValue;
         ua1 ua1Var;
@@ -91,7 +91,7 @@ public final /* synthetic */ class e2 implements hq0 {
         int i = 5;
         final int i2 = 2;
         int i3 = 3;
-        ?? r12 = 0;
+        var r12 = 0;
         ty2 ty2Var = null;
         r12 = 0;
         final int i4 = 0;
@@ -194,7 +194,7 @@ public final /* synthetic */ class e2 implements hq0 {
                 rf0 rf0Var = (rf0) obj;
                 hz2 hz2VarD = ua1Var2.d();
                 if (hz2VarD != null) {
-                    ?? M = rf0Var.C().m();
+                    var M = rf0Var.C().m();
                     long j2 = ((oz2) ua1Var2.A.getValue()).a;
                     long j3 = ((oz2) ua1Var2.B.getValue()).a;
                     gz2 gz2Var5 = hz2VarD.a;
@@ -266,22 +266,22 @@ public final /* synthetic */ class e2 implements hq0 {
                                 fl1.i(fl1Var, M, hnVarD, uy2Var != el1Var ? uy2Var.a() : 1.0f, vj2Var2, sx2Var2, wm4Var2);
                                 r3 = M;
                             } else {
-                                ?? r19 = M;
+                                var r19 = M;
                                 long jC = uy2Var != el1Var ? uy2Var.c() : sz.b;
                                 r19.m();
                                 ArrayList arrayList = fl1Var.h;
                                 int size = arrayList.size();
                                 int i6 = 0;
-                                ?? r110 = r19;
+                                var r110 = r19;
                                 while (i6 < size) {
                                     au1 au1Var = (au1) arrayList.get(i6);
                                     au1Var.a.f(r110, jC, vj2Var2, sx2Var2, wm4Var2);
-                                    ?? r4 = r110;
+                                    var r4 = r110;
                                     r4.g(0.0f, au1Var.a.b());
                                     i6++;
                                     r110 = r4;
                                 }
-                                ?? r5 = r110;
+                                var r5 = r110;
                                 r5.j();
                                 r3 = r5;
                             }

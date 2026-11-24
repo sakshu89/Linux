@@ -31,15 +31,15 @@ public abstract class ra4 {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     public static final int a(int i, String str) {
-        ?? r5;
-        ?? r6;
+        Object r5;
+        Object r6;
         int spanEnd;
         oh0 oh0VarC = c();
         Integer num = null;
         if (oh0VarC != null) {
             hh1.e("Not initialized yet", oh0VarC.c() == 1);
             hh1.d(str, "charSequence cannot be null");
-            ?? r4 = oh0VarC.e.b;
+            var r4 = oh0VarC.e.b;
             r4.getClass();
             if (i < 0 || i >= str.length()) {
                 r6 = str;
@@ -51,12 +51,12 @@ public abstract class ra4 {
                     spanEnd = spanned.getSpanEnd(r33VarArr[0]);
                     r6 = str;
                 } else {
-                    ?? r7 = str;
+                    var r7 = str;
                     spanEnd = ((xh0) r4.y(r7, Math.max(0, i - 16), Math.min(str.length(), i + 16), Integer.MAX_VALUE, true, new xh0(i))).c;
                     r6 = r7;
                 }
             } else {
-                ?? r8 = str;
+                var r8 = str;
                 spanEnd = ((xh0) r4.y(r8, Math.max(0, i - 16), Math.min(str.length(), i + 16), Integer.MAX_VALUE, true, new xh0(i))).c;
                 r6 = r8;
             }
@@ -72,7 +72,7 @@ public abstract class ra4 {
         if (num != null) {
             return num.intValue();
         }
-        ?? characterInstance = BreakIterator.getCharacterInstance();
+        var characterInstance = BreakIterator.getCharacterInstance();
         characterInstance.setText(r5);
         return characterInstance.following(i);
     }

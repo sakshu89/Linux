@@ -274,8 +274,8 @@ public final /* synthetic */ class km implements vq0 {
         tm tmVar;
         pm1 pm1Var;
         boolean z2;
-        ?? r10;
-        ?? arrayList;
+        Object r10;
+        Object arrayList;
         h21 h21Var;
         int size;
         int i3;
@@ -344,7 +344,7 @@ public final /* synthetic */ class km implements vq0 {
         int iMax3;
         int i39;
         int i40;
-        ?? arrayList2;
+        Object arrayList2;
         int size2;
         int size3;
         int iMax4;
@@ -357,7 +357,7 @@ public final /* synthetic */ class km implements vq0 {
         int size4;
         int i45;
         ArrayList arrayList4;
-        ?? r2;
+        Object r2;
         int size5;
         int iMax5;
         int i46;
@@ -371,7 +371,7 @@ public final /* synthetic */ class km implements vq0 {
         int size6;
         int i47;
         int i48;
-        ?? r1;
+        Object r1;
         int iA3;
         int i49;
         int i50;
@@ -386,7 +386,7 @@ public final /* synthetic */ class km implements vq0 {
         boolean z9;
         y91 y91Var4;
         int i54;
-        ?? r11;
+        Object r11;
         Object obj4;
         y91 y91Var5;
         Integer numValueOf;
@@ -398,7 +398,7 @@ public final /* synthetic */ class km implements vq0 {
         int iIntValue2;
         int size8;
         int i55;
-        ?? r25;
+        Object r25;
         int i56;
         x91 x91Var;
         y91 y91Var7;
@@ -426,10 +426,10 @@ public final /* synthetic */ class km implements vq0 {
         int iIntValue3;
         ArrayList arrayList7;
         ArrayList arrayList8;
-        ?? r3;
+        Object r3;
         int i67;
         int iIntValue4;
-        ?? arrayList9;
+        Object arrayList9;
         int i68;
         int i69;
         int i70;
@@ -1043,7 +1043,7 @@ public final /* synthetic */ class km implements vq0 {
                                     i48 = 0;
                                     r1 = arrayList2;
                                     while (i48 < size6) {
-                                        ?? r17 = r1;
+                                        var r17 = r1;
                                         y91 y91Var10 = (y91) r1.get(i48);
                                         i47 -= y91Var10.l;
                                         y91Var10.c(i47, iG, iF);
@@ -1763,7 +1763,7 @@ public final /* synthetic */ class km implements vq0 {
                                         i48 = 0;
                                         r1 = arrayList2;
                                         while (i48 < size6) {
-                                            ?? r18 = r1;
+                                            var r18 = r1;
                                             y91 y91Var17 = (y91) r1.get(i48);
                                             i47 -= y91Var17.l;
                                             y91Var17.c(i47, iG, iF);
@@ -2359,7 +2359,7 @@ public final /* synthetic */ class km implements vq0 {
                                     i48 = 0;
                                     r1 = arrayList2;
                                     while (i48 < size6) {
-                                        ?? r19 = r1;
+                                        var r19 = r1;
                                         y91 y91Var113 = (y91) r1.get(i48);
                                         i47 -= y91Var113.l;
                                         y91Var113.c(i47, iG, iF);

@@ -1540,7 +1540,7 @@ public final class UCharacter implements UCharacterEnums.ECharacterCategory, UCh
         /* JADX WARN: Type inference failed for: r0v4, types: [java.lang.Object, java.util.HashMap] */
         /* JADX WARN: Type inference failed for: r0v8 */
         public static final UnicodeBlock forName(String str) {
-            ?? map = mref != null ? mref.get() : 0;
+            var map = mref != null ? mref.get() : 0;
             if (map == 0) {
                 map = new HashMap(BLOCKS_.length);
                 int i = 0;

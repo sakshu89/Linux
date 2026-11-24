@@ -22,7 +22,7 @@ public final class bn2 extends py0 {
             return;
         }
         final AtomicBoolean atomicBoolean = new AtomicBoolean(false);
-        ?? r3 = new WindowInsetsController.OnControllableInsetsChangedListener() { // from class: an2
+        var r3 = new WindowInsetsController.OnControllableInsetsChangedListener() { // from class: an2
             @Override // android.view.WindowInsetsController.OnControllableInsetsChangedListener
             public final void onControllableInsetsChanged(WindowInsetsController windowInsetsController2, int i) {
                 atomicBoolean.set((i & 8) != 0);

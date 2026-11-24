@@ -263,7 +263,7 @@ public class GlobalizationPreferences implements Freezable<GlobalizationPreferen
     /* JADX WARN: Type inference failed for: r2v8, types: [java.lang.String] */
     /* JADX WARN: Type inference failed for: r9v0, types: [java.lang.String] */
     public String getDisplayName(String str, int i) {
-        ?? displayName = str;
+        var displayName = str;
         for (ULocale uLocale : getLocales()) {
             int i2 = 0;
             if (isAvailableLocale(uLocale, 0)) {
@@ -337,7 +337,7 @@ public class GlobalizationPreferences implements Freezable<GlobalizationPreferen
                         displayName = simpleDateFormat.format(new Date());
                         int iIndexOf = displayName.indexOf(40);
                         int iIndexOf2 = displayName.indexOf(41);
-                        ?? Substring = (iIndexOf == -1 || iIndexOf2 == -1 || iIndexOf2 - iIndexOf != 3) ? displayName : displayName.substring(iIndexOf + 1, iIndexOf2);
+                        var Substring = (iIndexOf == -1 || iIndexOf2 == -1 || iIndexOf2 - iIndexOf != 3) ? displayName : displayName.substring(iIndexOf + 1, iIndexOf2);
                         if (Substring.length() == 2) {
                             while (true) {
                                 if (i2 >= 2) {
@@ -407,11 +407,11 @@ public class GlobalizationPreferences implements Freezable<GlobalizationPreferen
     public ResourceBundle getResourceBundle(String str, ClassLoader classLoader) {
         List<ULocale> locales = getLocales();
         int i = 0;
-        ?? name = 0;
+        var name = 0;
         UResourceBundle bundleInstance = null;
         UResourceBundle uResourceBundle = null;
         while (i < locales.size()) {
-            ?? string = locales.get(i).toString();
+            var string = locales.get(i).toString();
             if (name == 0 || !string.equals(name)) {
                 if (classLoader == null) {
                     try {

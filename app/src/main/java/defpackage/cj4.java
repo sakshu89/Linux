@@ -20,7 +20,7 @@ public abstract class cj4 {
         if (rl2Var.w || rl2Var.p() == 0) {
             return ii0.a;
         }
-        ?? y22Var = new y22(rl2Var);
+        var y22Var = new y22(rl2Var);
         if (num2 != null) {
             iE = num2.intValue();
         } else {
@@ -93,7 +93,7 @@ public abstract class cj4 {
     /* JADX WARN: Type inference failed for: r9v4 */
     /* JADX WARN: Type inference failed for: r9v5 */
     public static final ArrayList c(nl2 nl2Var, int i, Integer num) {
-        ?? y22Var = new y22(nl2Var);
+        var y22Var = new y22(nl2Var);
         i = nl2Var.q(i);
         j6 j6VarA = nl2Var.a(i);
         while (i >= 0) {

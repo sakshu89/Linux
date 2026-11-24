@@ -148,7 +148,7 @@ public abstract class zb0 extends dk1 {
                 this.e = i;
             }
             boolean z2 = this.w;
-            ?? r2 = this;
+            var r2 = this;
             if (z2) {
                 while (r2 != 0) {
                     i |= r2.c;

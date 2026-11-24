@@ -76,7 +76,7 @@ public abstract class h51 {
         int i;
         List list;
         Integer numValueOf;
-        ?? r13;
+        Object r13;
         String[] strArrB;
         String[] strArrB2;
         gm1 gm1Var;
@@ -344,12 +344,12 @@ public abstract class h51 {
             viewStructure.setSelected(bool.booleanValue());
         }
         if (d13Var != null) {
-            ?? r14 = i;
+            var r14 = i;
             viewStructure.setCheckable(r14);
             viewStructure.setChecked(d13Var == d13.a ? r14 == true ? 1 : 0 : false);
             r13 = r14;
         } else {
-            ?? r15 = i;
+            var r15 = i;
             r13 = r15;
             if (bool != null) {
                 viewStructure.setCheckable(r15);
@@ -364,7 +364,7 @@ public abstract class h51 {
             kf2.g("Array is empty.");
             return;
         }
-        ?? r23 = (z2 || ((n50Var == null || (strArrB = zk4.b(n50Var)) == null || qg.q(strArrB, strArrB3[0]) < 0) ? 0 : r13) != 0) ? r13 : 0;
+        var r23 = (z2 || ((n50Var == null || (strArrB = zk4.b(n50Var)) == null || qg.q(strArrB, strArrB3[0]) < 0) ? 0 : r13) != 0) ? r13 : 0;
         viewStructure.setDataIsSensitive((r23 != 0 || zBooleanValue) ? r13 : 0);
         viewStructure.setVisibility(n71Var.o0.d.d1() ? 4 : 0);
         if (list != null) {

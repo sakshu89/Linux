@@ -833,10 +833,10 @@ public class l11 implements ls, ir0, wh0, zs2 {
         cg2 cg2Var;
         AccessibilityNodeInfo accessibilityNodeInfo3;
         h3 h3Var3;
-        ?? r0;
-        ?? r1;
+        Object r0;
+        Object r1;
         ng2 ng2Var;
-        ?? r2;
+        Object r2;
         gg2 gg2Var2;
         String strD;
         Object objG2;
@@ -845,7 +845,7 @@ public class l11 implements ls, ir0, wh0, zs2 {
         Boolean bool;
         Object objG4;
         List list;
-        ?? r3;
+        Object r3;
         Object objG5;
         String str;
         Object objG6;
@@ -965,11 +965,11 @@ public class l11 implements ls, ir0, wh0, zs2 {
         ArrayList arrayList5;
         b13 b13Var2;
         SpannableString spannableString2;
-        ?? arrayList6;
-        ?? arrayList7;
+        Object arrayList6;
+        Object arrayList7;
         int size7;
         int i17;
-        ?? arrayList8;
+        Object arrayList8;
         int size8;
         int i18;
         b13 b13Var3;
@@ -1542,7 +1542,7 @@ public class l11 implements ls, ir0, wh0, zs2 {
                             g31.a(objG26, Boolean.TRUE);
                             r1.setClickable(true);
                             if (pc4.a(gg2Var2) && r2.isClickable()) {
-                                ?? r14 = h3Var2;
+                                var r14 = h3Var2;
                                 h3Var4.a(new d3(r14, 16, b2Var.a, r14));
                             }
                         }
@@ -1997,7 +1997,7 @@ public class l11 implements ls, ir0, wh0, zs2 {
                         g31.a(objG26, Boolean.TRUE);
                         r1.setClickable(true);
                         if (pc4.a(gg2Var2)) {
-                            ?? r15 = h3Var2;
+                            var r15 = h3Var2;
                             h3Var4.a(new d3(r15, 16, b2Var.a, r15));
                         }
                     }
@@ -2986,7 +2986,7 @@ public class l11 implements ls, ir0, wh0, zs2 {
                             g31.a(objG26, Boolean.TRUE);
                             r1.setClickable(true);
                             if (pc4.a(gg2Var2)) {
-                                ?? r16 = h3Var2;
+                                var r16 = h3Var2;
                                 h3Var4.a(new d3(r16, 16, b2Var.a, r16));
                             }
                         }
@@ -3499,7 +3499,7 @@ public class l11 implements ls, ir0, wh0, zs2 {
                         g31.a(objG26, Boolean.TRUE);
                         r1.setClickable(true);
                         if (pc4.a(gg2Var2)) {
-                            ?? r17 = h3Var2;
+                            var r17 = h3Var2;
                             h3Var4.a(new d3(r17, 16, b2Var.a, r17));
                         }
                     }

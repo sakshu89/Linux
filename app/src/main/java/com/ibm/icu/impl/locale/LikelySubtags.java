@@ -93,8 +93,8 @@ public final class LikelySubtags {
         /* JADX WARN: Type inference failed for: r5v1, types: [java.util.Map] */
         /* JADX WARN: Type inference failed for: r5v2, types: [java.util.HashMap] */
         public static Data load() {
-            ?? map;
-            ?? map2;
+            Object map;
+            Object map2;
             UResource.Value valueWithFallback = ICUResourceBundle.getBundleInstance(ICUData.ICU_BASE_NAME, "langInfo", ICUResourceBundle.ICU_DATA_CLASS_LOADER, ICUResourceBundle.OpenType.DIRECT).getValueWithFallback("likely");
             UResource.Table table = valueWithFallback.getTable();
             if (table.findValue("languageAliases", valueWithFallback)) {
@@ -333,7 +333,7 @@ public final class LikelySubtags {
         boolean z5;
         boolean z6;
         long state65;
-        ?? r3;
+        Object r3;
         String str4;
         int i;
         int i2;

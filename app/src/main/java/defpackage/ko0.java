@@ -383,8 +383,8 @@ public final class ko0 extends dk1 implements h30, w61, ep1, gk1, xb0 {
                             return;
                         }
                         if ((i & 4096) != 0) {
-                            ?? B = dk1Var2;
-                            ?? pm1Var = 0;
+                            var B = dk1Var2;
+                            var pm1Var = 0;
                             while (B != 0) {
                                 if (B instanceof rn0) {
                                     rn0 rn0Var = (rn0) B;
