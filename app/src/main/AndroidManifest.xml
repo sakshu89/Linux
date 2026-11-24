@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:versionCode="2"
     android:versionName="3.0-Linux"
     android:compileSdkVersion="36"
@@ -114,7 +115,6 @@
         android:name="com.project.sonic.SonicApplication"
         android:allowBackup="false"
         android:supportsRtl="true"
-        android:extractNativeLibs="false"
         android:fullBackupContent="@xml/backup_rules"
         android:usesCleartextTraffic="false"
         android:networkSecurityConfig="@xml/network_security_config"
@@ -222,7 +222,8 @@
             android:name="com.google.mlkit.common.internal.MlKitInitProvider"
             android:exported="false"
             android:authorities="com.project.sonic.mlkitinitprovider"
-            android:initOrder="99"/>
+            android:initOrder="99"
+            tools:replace="android:authorities"/>
         <activity
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
