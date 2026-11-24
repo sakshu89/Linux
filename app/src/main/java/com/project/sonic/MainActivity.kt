@@ -1,115 +1,90 @@
 package com.project.sonic
 
+import android.graphics.Color
 import android.os.Bundle
+import android.view.Gravity
+import android.widget.Button
+import android.widget.EditText
+import android.widget.LinearLayout
+import android.widget.ScrollView
+import android.widget.TextView
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.Button
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.runtime.setValue
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
+import androidx.lifecycle.lifecycleScope
 import com.project.sonic.linux.runtime.LinuxRuntimeRegistry
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 /** Launcher screen for the on-device Linux runtime. */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            MaterialTheme {
-                Surface(modifier = Modifier.fillMaxSize()) {
-                    LinuxHome()
+
+        val title = TextView(this).apply {
+            text = "Linux"
+            textSize = 28f
+            setTextColor(Color.WHITE)
+        }
+        val status = TextView(this).apply {
+            text = "Models are not loaded yet"
+            setTextColor(Color.LTGRAY)
+        }
+        val prepareButton = Button(this).apply { text = "Prepare models" }
+        val promptInput = EditText(this).apply { hint = "Ask Linux" }
+        val runButton = Button(this).apply { text = "Run" }
+        val resultText = TextView(this).apply {
+            text = ""
+            setTextColor(Color.WHITE)
+        }
+
+        val content = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            gravity = Gravity.TOP
+            setPadding(32, 32, 32, 32)
+            addView(title)
+            addView(status)
+            addView(prepareButton)
+            addView(promptInput)
+            addView(runButton)
+            addView(resultText)
+        }
+
+        prepareButton.setOnClickListener {
+            prepareButton.isEnabled = false
+            status.text = "Preparing local models — first run downloads the model files."
+            lifecycleScope.launch {
+                val ok = withContext(Dispatchers.IO) {
+                    try {
+                        LinuxRuntimeRegistry.get(this@MainActivity).prepare()
+                    } catch (_: Throwable) {
+                        false
+                    }
                 }
+                status.text = if (ok) "Ready — models loaded" else "Prepare failed — check network and storage"
+                prepareButton.isEnabled = true
             }
         }
-    }
 
-    @Composable
-    private fun LinuxHome() {
-        val scope = rememberCoroutineScope()
-        var status by remember { mutableStateOf("Models are not loaded yet") }
-        var prompt by remember { mutableStateOf("") }
-        var result by remember { mutableStateOf("") }
-        var busy by remember { mutableStateOf(false) }
-
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .verticalScroll(rememberScrollState())
-                .padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp)
-        ) {
-            Text("Linux", style = MaterialTheme.typography.headlineLarge)
-            Text(status, style = MaterialTheme.typography.bodyMedium)
-
-            if (busy) {
-                CircularProgressIndicator()
+        runButton.setOnClickListener {
+            val prompt = promptInput.text.toString().trim()
+            if (prompt.isEmpty()) {
+                resultText.text = "Type a prompt first."
+                return@setOnClickListener
             }
-
-            Button(
-                onClick = {
-                    scope.launch {
-                        busy = true
-                        status = "Preparing local models — the first run downloads the model files."
-                        val ok = try {
-                            LinuxRuntimeRegistry.get(this@MainActivity).prepare()
-                        } catch (_: Throwable) {
-                            false
-                        }
-                        status = if (ok) "Ready — models loaded" else "Prepare failed — check network and storage"
-                        busy = false
+            runButton.isEnabled = false
+            resultText.text = "Thinking…"
+            lifecycleScope.launch {
+                resultText.text = withContext(Dispatchers.Default) {
+                    try {
+                        LinuxRuntimeRegistry.get(this@MainActivity).think(prompt, "[]")
+                    } catch (e: Throwable) {
+                        "Error: ${e.message}"
                     }
-                },
-                enabled = !busy
-            ) {
-                Text("Prepare models")
-            }
-
-            OutlinedTextField(
-                value = prompt,
-                onValueChange = { prompt = it },
-                label = { Text("Ask Linux") },
-                modifier = Modifier.fillMaxWidth(),
-                minLines = 3
-            )
-
-            Button(
-                onClick = {
-                    scope.launch {
-                        busy = true
-                        result = try {
-                            LinuxRuntimeRegistry.get(this@MainActivity).think(prompt, "[]")
-                        } catch (e: Throwable) {
-                            "Error: ${e.message}"
-                        }
-                        busy = false
-                    }
-                },
-                enabled = !busy && prompt.isNotBlank()
-            ) {
-                Text("Run")
-            }
-
-            if (result.isNotBlank()) {
-                Text("Result", style = MaterialTheme.typography.titleMedium)
-                Text(result, style = MaterialTheme.typography.bodyMedium)
+                }
+                runButton.isEnabled = true
             }
         }
+
+        setContentView(ScrollView(this).apply { addView(content) })
     }
 }
